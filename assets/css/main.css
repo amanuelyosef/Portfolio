@@ -12,43 +12,43 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --heading-font: "Space Grotesk", sans-serif;
-  --nav-font: "Space Grotesk", sans-serif;
+  --default-font: "Inter", system-ui, -apple-system, sans-serif;
+  --heading-font: "Outfit", sans-serif;
+  --nav-font: "Outfit", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #f6f8fc; /* Background color for the entire website, including individual sections */
-  --default-color: #334155; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0f172a; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #2563eb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #0f172a; /* Slate 900 (Blue-Black) */
+  --default-color: #cbd5e1; /* Slate 300 */
+  --heading-color: #f8fafc; /* Slate 50 */
+  --accent-color: #3b82f6; /* Blue 500 */
+  --surface-color: #1e293b; /* Slate 800 */
+  --contrast-color: #ffffff; 
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.78);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #020617; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #020617; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: rgba(255, 255, 255, 0.72); /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(255, 255, 255, 0.85);  /* The default color of the main navmenu links */
+  --nav-hover-color: #60a5fa; /* Blue 400 */
+  --nav-mobile-background-color: #0f172a; /* Slate 900 */
+  --nav-dropdown-background-color: #1e293b; /* Slate 800 */
+  --nav-dropdown-color: rgba(255, 255, 255, 0.8); /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #60a5fa; /* Blue 400 */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f6f8fc;
-  --surface-color: #ffffff;
+  --background-color: #1e293b; /* Slate 800 */
+  --surface-color: #334155; /* Slate 700 */
 }
 
 .dark-background {
-  --background-color: #020617;
-  --default-color: #ffffff;
+  --background-color: #0f172a; /* Slate 900 */
+  --default-color: #f1f5f9; /* Slate 100 */
   --heading-color: #ffffff;
-  --surface-color: rgba(15, 23, 42, 0.78);
+  --surface-color: #1e293b; /* Slate 800 */
   --contrast-color: #ffffff;
 }
 
@@ -65,9 +65,9 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
   background-image:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 28%),
-    radial-gradient(circle at right 20%, rgba(14, 165, 233, 0.08), transparent 24%),
-    linear-gradient(180deg, #f8fbff 0%, #f6f8fc 100%);
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 40%),
+    radial-gradient(circle at right 20%, rgba(147, 197, 253, 0.1), transparent 35%),
+    linear-gradient(180deg, #0f172a 0%, var(--background-color) 100%);
 }
 
 a {
@@ -152,7 +152,7 @@ p {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
   position: fixed;
   top: 0;
   left: 0;
@@ -162,8 +162,8 @@ p {
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid rgba(148, 163, 184, 0.14);
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 .header .profile-img img {
@@ -582,8 +582,8 @@ section,
 .hero:before {
   content: "";
   background:
-    linear-gradient(135deg, rgba(2, 6, 23, 0.92) 0%, rgba(15, 23, 42, 0.68) 45%, rgba(37, 99, 235, 0.34) 100%),
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 35%);
+    linear-gradient(135deg, rgba(9, 9, 11, 0.95) 0%, rgba(24, 24, 27, 0.75) 45%, rgba(99, 102, 241, 0.35) 100%),
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.25), transparent 40%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -596,12 +596,13 @@ section,
 
 .hero-panel {
   max-width: 760px;
-  background: rgba(15, 23, 42, 0.5);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(24, 24, 27, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 28px;
   padding: 42px;
-  backdrop-filter: blur(18px);
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 
 .hero-eyebrow {
@@ -634,7 +635,7 @@ section,
 
 .hero-role span {
   letter-spacing: 0.03em;
-  border-bottom: 2px solid rgba(125, 211, 252, 0.95);
+  border-bottom: 2px solid rgba(168, 85, 247, 0.8);
 }
 
 .hero-actions {
@@ -654,9 +655,9 @@ section,
 }
 
 .btn-hero-primary {
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  background: linear-gradient(135deg, #6366f1, #a855f7);
   color: #ffffff;
-  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.32);
+  box-shadow: 0 14px 30px rgba(99, 102, 241, 0.35);
 }
 
 .btn-hero-secondary {
