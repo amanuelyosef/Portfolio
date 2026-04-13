@@ -1037,6 +1037,49 @@ section,
   transform: scale(1.1);
 }
 
+.glightbox-clean .gslide-description {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9));
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 14px;
+  padding: 16px 18px;
+  backdrop-filter: blur(6px);
+  max-width: 760px;
+  margin: 14px auto 0;
+  box-shadow: 0 16px 36px rgba(2, 6, 23, 0.45);
+}
+
+.glightbox-clean .gslide-title {
+  color: #f8fafc;
+  font-family: var(--heading-font);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.glightbox-clean .gslide-desc {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .glightbox-clean .gslide-description {
+    border-radius: 12px;
+    padding: 14px 14px;
+    margin-top: 10px;
+  }
+
+  .glightbox-clean .gslide-title {
+    font-size: 1rem;
+  }
+
+  .glightbox-clean .gslide-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
