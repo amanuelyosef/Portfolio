@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051923"/>
+      <stop offset="50%" stop-color="#0c2340"/>
+      <stop offset="100%" stop-color="#043226"/>
+    </linearGradient>
+    <linearGradient id="payGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- High-throughput data stream waves -->
+  <path d="M 0 160 Q 200 110, 400 160 T 800 160" fill="none" stroke="url(#payGrad)" stroke-width="2.5" opacity="0.6"/>
+  <path d="M 0 210 Q 250 260, 500 200 T 800 220" fill="none" stroke="url(#payGrad)" stroke-width="2" opacity="0.4"/>
+  <path d="M 0 120 Q 300 80, 600 140 T 800 110" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Transaction packet nodes -->
+  <circle cx="180" cy="155" r="7" fill="#10b981" filter="url(#glow)"/>
+  <circle cx="360" cy="150" r="9" fill="#06b6d4" filter="url(#glow)"/>
+  <circle cx="560" cy="175" r="7" fill="#10b981" filter="url(#glow)"/>
+  <circle cx="700" cy="160" r="10" fill="#34d399" filter="url(#glow)"/>
+
+  <!-- Distributed Routing Hub visualization -->
+  <g transform="translate(400, 150)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <circle cx="0" cy="0" r="28" fill="#0c2340" stroke="#10b981" stroke-width="2" filter="url(#glow)"/>
+    <path d="M -10 -5 L 0 -15 L 10 -5 M 0 -15 L 0 15 M -10 5 L 0 15 L 10 5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Central Card -->
+  <rect x="100" y="320" width="600" height="230" rx="20" fill="#0f172a" fill-opacity="0.88" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Category Tag -->
+  <rect x="130" y="348" width="180" height="28" rx="14" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+  <text x="220" y="367" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#10b981" text-anchor="middle">DISTRIBUTED SYSTEMS</text>
+
+  <!-- Title -->
+  <text x="130" y="415" font-family="'Outfit', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">PayStream</text>
+
+  <!-- Subtitle -->
+  <text x="130" y="445" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#94a3b8">High-Throughput Payment Orchestrator &amp; Real-Time Fraud Detection</text>
+
+  <!-- Metrics highlight bar -->
+  <g font-family="'Inter', sans-serif" font-size="13" font-weight="600">
+    <rect x="130" y="475" width="165" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="212" y="498" fill="#10b981" text-anchor="middle">⚡ 99.99% Uptime</text>
+
+    <rect x="310" y="475" width="170" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="395" y="498" fill="#06b6d4" text-anchor="middle">🛡️ -18% Chargebacks</text>
+
+    <rect x="495" y="475" width="175" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="582" y="498" fill="#a7f3d0" text-anchor="middle">🌐 5+ Gateways Routing</text>
+  </g>
+</svg>

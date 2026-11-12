@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#1e1035"/>
+      <stop offset="100%" stop-color="#241442"/>
+    </linearGradient>
+    <linearGradient id="collabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Collaborative WebSockets / Real-Time visual arcs -->
+  <g opacity="0.35" stroke="url(#collabGrad)" stroke-width="2" fill="none">
+    <circle cx="400" cy="160" r="110" stroke-dasharray="8,6"/>
+    <circle cx="400" cy="160" r="60"/>
+  </g>
+
+  <!-- Chat / Video / Sync nodes -->
+  <g transform="translate(400, 160)">
+    <!-- Central Real-Time Node -->
+    <circle cx="0" cy="0" r="26" fill="#1e1035" stroke="#c084fc" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M -8 -8 L 8 -8 L 8 4 L -2 4 L -8 9 Z" fill="#c084fc"/>
+
+    <!-- Orbiting collaboration features -->
+    <!-- Video / Jitsi -->
+    <g transform="translate(-110, 0)">
+      <circle cx="0" cy="0" r="18" fill="#1e1035" stroke="#818cf8" stroke-width="2" filter="url(#glow)"/>
+      <polygon points="-4,-6 6,0 -4,6" fill="#818cf8"/>
+    </g>
+    <!-- WebSocket Sync -->
+    <g transform="translate(110, 0)">
+      <circle cx="0" cy="0" r="18" fill="#1e1035" stroke="#f472b6" stroke-width="2" filter="url(#glow)"/>
+      <circle cx="0" cy="0" r="6" fill="#f472b6"/>
+    </g>
+    <!-- Pomodoro / Timer -->
+    <g transform="translate(0, -110)">
+      <circle cx="0" cy="0" r="18" fill="#1e1035" stroke="#34d399" stroke-width="2" filter="url(#glow)"/>
+      <path d="M 0 -8 L 0 0 L 5 4" stroke="#34d399" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Central Card -->
+  <rect x="100" y="320" width="600" height="230" rx="20" fill="#0f172a" fill-opacity="0.88" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Category Tag -->
+  <rect x="130" y="348" width="190" height="28" rx="14" fill="rgba(192, 132, 252, 0.15)" stroke="#c084fc" stroke-width="1"/>
+  <text x="225" y="367" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#c084fc" text-anchor="middle">REAL-TIME COLLABORATION</text>
+
+  <!-- Title -->
+  <text x="130" y="415" font-family="'Outfit', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Study Buddy</text>
+
+  <!-- Subtitle -->
+  <text x="130" y="445" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#94a3b8">Real-Time Platform with WebSockets, Jitsi Video &amp; Chapa Payments</text>
+
+  <!-- Metrics highlight bar -->
+  <g font-family="'Inter', sans-serif" font-size="13" font-weight="600">
+    <rect x="130" y="475" width="165" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="212" y="498" fill="#818cf8" text-anchor="middle">💬 Live WebSockets</text>
+
+    <rect x="310" y="475" width="160" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="390" y="498" fill="#c084fc" text-anchor="middle">⏱️ Pomodoro + Jitsi</text>
+
+    <rect x="485" y="475" width="185" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
+    <text x="577" y="498" fill="#f472b6" text-anchor="middle">🐳 Docker + Celery Stack</text>
+  </g>
+</svg>
