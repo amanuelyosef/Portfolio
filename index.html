@@ -4,25 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Amanuel Yosef | Senior Backend &amp; AI Engineer</title>
-  <meta content="Portfolio of Amanuel Yosef — Senior Backend &amp; AI Engineer with 8 years of experience architecting high-performance distributed systems (10M+ monthly requests) and production-grade LLM orchestration." name="description">
-  <meta content="Amanuel Yosef, Senior Backend Engineer, AI Engineer, Machine Learning, Python, Go, Golang, FastAPI, Kafka, Distributed Systems, Microservices, LLM Orchestration, GPT-4, LangChain, PyTorch, Docker, Kubernetes, AWS, Addis Ababa, Ethiopia" name="keywords">
+  <title>Amanuel Yosef — Senior Backend &amp; AI Engineer</title>
+  <meta content="Portfolio of Amanuel Yosef, Senior Backend &amp; AI Engineer with 8 years of experience architecting high-throughput distributed systems (10M+ monthly requests) and production LLM orchestration." name="description">
+  <meta content="Amanuel Yosef, Senior Backend Engineer, AI Engineer, Distributed Systems, Python, Go, FastAPI, Apache Kafka, PyTorch, LangChain, GPT-4, Kubernetes, PostgreSQL, Addis Ababa" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Fonts (non-render-blocking) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Preload critical above-the-fold font & portrait -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6">
+  <link rel="preload" as="image" type="image/webp" href="assets/img/my-profile-img.webp">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"></noscript>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -31,35 +36,42 @@
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <i class="header-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Amanuel Yosef" class="img-fluid rounded-circle">
+      <picture>
+        <source srcset="assets/img/my-profile-img.webp" type="image/webp">
+        <img src="assets/img/my-profile-img.jpg" alt="Portrait of Amanuel Yosef" class="img-fluid rounded-circle" width="112" height="112" decoding="async" fetchpriority="high">
+      </picture>
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Amanuel Yosef</h1>
     </a>
+    <p class="sidebar-role">Senior Backend &amp; AI Engineer</p>
 
     <div class="social-links text-center">
-      <a href="https://github.com/amanuelyosef" class="github" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" class="linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:amanuyosi12@gmail.com" class="envelope" title="Email"><i class="bi bi-envelope"></i></a>
-      <a href="https://t.me/proaman777" class="telegram" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
-      <a href="https://x.com/AmanuYosi" class="twitter" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://github.com/amanuelyosef" class="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" class="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:amanuyosi12@gmail.com" class="envelope" title="Email" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      <a href="https://t.me/proaman777" class="telegram" title="Telegram" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
+      <a href="https://x.com/AmanuYosi" class="twitter" title="X (Twitter)" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
     </div>
 
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" aria-label="Primary Navigation">
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-cpu navicon"></i> Skills</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-grid navicon"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="#skills"><i class="bi bi-cpu navicon"></i>Capabilities</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Experience</a></li>
+        <li><a href="#portfolio"><i class="bi bi-grid navicon"></i>Projects</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
       </ul>
     </nav>
 
+    <div class="sidebar-footer">
+      <span class="availability-dot" aria-hidden="true"></span>Available for Remote &amp; Full-Time Roles
+    </div>
   </header>
 
   <main class="main">
@@ -67,28 +79,45 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="Background" data-aos="fade-in" class="">
+      <picture>
+        <source srcset="assets/img/hero-bg.webp" type="image/webp">
+        <img src="assets/img/hero-bg.jpg" alt="" class="hero-bg-img" aria-hidden="true" width="800" height="600" decoding="async" fetchpriority="high">
+      </picture>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="hero-panel">
-          <p class="hero-eyebrow"><i class="bi bi-geo-alt-fill me-1"></i> Addis Ababa, Ethiopia | Senior Backend &amp; AI Engineer</p>
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Addis Ababa, Ethiopia &middot; Remote Worldwide</p>
           <h2>Amanuel Yosef</h2>
-          <p class="hero-lead">8 years of experience architecting high-performance distributed systems handling 10M+ monthly requests and building production-grade agentic LLM orchestration.</p>
-          <p class="hero-role">Specialized in <span class="typed" data-typed-items="Senior Backend Engineering, Distributed Systems &amp; Kafka, AI &amp; LLM Orchestration, Agentic Workflows &amp; RAG, High-Throughput Microservices">Senior Backend Engineering</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          <p class="hero-lead">
+            Senior Backend &amp; AI Engineer with 8 years of experience designing fault-tolerant distributed systems (10M+ monthly requests) and production-grade LLM orchestration.
+          </p>
+          <p class="hero-role">
+            Focused on <span class="typed" data-typed-items="Distributed Systems &amp; Kafka,Agentic LLM Orchestration,High-Throughput Microservices,Multi-Tenant Cloud Architecture,ML Systems &amp; Evaluation">Distributed Systems &amp; Kafka</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+          </p>
+
           <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-hero-primary"><i class="bi bi-grid-fill me-1"></i> View Projects</a>
-            <a href="Amanuel_Yosef_CV.pdf" target="_blank" class="btn btn-hero-secondary"><i class="bi bi-file-earmark-pdf me-1"></i> View / Download CV</a>
-            <a href="#contact" class="btn btn-hero-secondary"><i class="bi bi-chat-dots me-1"></i> Contact Me</a>
+            <a href="#portfolio" class="btn-classic-primary"><i class="bi bi-grid"></i> Explore Selected Work</a>
+            <a href="Amanuel_Yosef_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-classic-secondary"><i class="bi bi-file-earmark-pdf"></i> Download CV (PDF)</a>
+            <a href="#contact" class="btn-classic-secondary"><i class="bi bi-envelope"></i> Get in Touch</a>
           </div>
-          <div class="hero-highlights">
+
+          <div class="hero-stack-strip">
+            <strong>Core Stack</strong>
             <span>Python</span>
-            <span>Go (Golang)</span>
+            <span>&middot;</span>
+            <span>Go</span>
+            <span>&middot;</span>
             <span>FastAPI</span>
+            <span>&middot;</span>
             <span>Apache Kafka</span>
-            <span>PyTorch</span>
-            <span>LangChain &amp; GPT-4</span>
-            <span>Docker &amp; K8s</span>
+            <span>&middot;</span>
             <span>PostgreSQL (RLS)</span>
+            <span>&middot;</span>
+            <span>PyTorch</span>
+            <span>&middot;</span>
+            <span>LangChain &amp; GPT-4</span>
+            <span>&middot;</span>
+            <span>Docker &amp; Kubernetes</span>
           </div>
         </div>
       </div>
@@ -98,54 +127,79 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-kicker">01 / Profile</span>
         <h2>About</h2>
-        <p>
-          Senior Backend &amp; AI Engineer with 8 years of experience architecting high-performance distributed systems and production-grade LLM orchestration. Proven track record of scaling architectures to handle 10M+ monthly requests with sub-100ms latency and building complex agentic workflows using GPT-4 and LangChain. Expert in Python, Go, and event-driven microservices (Kafka) with a deep focus on system reliability, security, and data integrity. Adept at navigating ambiguous requirements, documenting architectural reasoning, and mentoring engineering teams to deliver elite-level software.
-        </p>
-      </div><!-- End Section Title -->
+        <p>Engineering resilient distributed backends and production AI systems built for clarity, measurable scale, and operational reliability.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="row gy-4 align-items-start">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 text-center">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid rounded-4 shadow-lg" alt="Amanuel Yosef">
-            <div class="mt-4">
-              <a href="Amanuel_Yosef_CV.pdf" target="_blank" class="btn-resume-download w-100 justify-content-center">
-                <i class="bi bi-file-earmark-pdf-fill"></i> Download Complete CV (PDF)
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Senior Backend &amp; AI Engineer</h2>
-            <p class="fst-italic py-2 text-info">
-              "Architecting resilient event-driven microservices, high-throughput data streams, and production-grade agentic AI with rigorous reliability, security, and measurable impact."
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Specialization:</strong> <span>Distributed Systems &amp; LLM Orchestration</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Experience:</strong> <span>8+ Years</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Phone:</strong> <span>+251 928 169 211</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Location:</strong> <span>Addis Ababa, Ethiopia</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Education:</strong> <span>B.Sc. in Software Engineering (AASTU)</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Email:</strong> <span>amanuyosi12@gmail.com</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Core Languages:</strong> <span>Python, Go, TypeScript, Java, SQL</span></li>
-                  <li class="py-2"><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Availability:</strong> <span>Full-Time, Contract &amp; Remote</span></li>
-                </ul>
+          <div class="col-lg-4">
+            <div class="about-portrait-card">
+              <picture>
+                <source srcset="assets/img/my-profile-img.webp" type="image/webp">
+                <img src="assets/img/my-profile-img.jpg" alt="Amanuel Yosef — Senior Backend and AI Engineer" width="640" height="640" loading="lazy" decoding="async">
+              </picture>
+              <div class="about-portrait-meta">
+                <span class="status-pill"><i class="bi bi-circle-fill"></i> Open to Opportunities</span>
+                <p class="small text-muted mb-3">
+                  Based in Addis Ababa (EAT / UTC+3). Experienced collaborating with distributed engineering teams across Europe and North America.
+                </p>
+                <a href="Amanuel_Yosef_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-classic-primary w-100">
+                  <i class="bi bi-file-earmark-pdf"></i> Download Complete CV
+                </a>
               </div>
             </div>
-            <p class="py-2">
-              Over the past 8 years, I have architected and scaled multi-tenant enterprise platforms, transitioned monoliths into event-driven microservices that tripled throughput, designed fraud detection systems processing 5M+ daily transactions, and built intelligent agentic workflows equipped with autonomous tool use, RAG retrieval, and rigorous evaluation pipelines.
-            </p>
           </div>
+
+          <div class="col-lg-8 content ps-lg-4">
+            <h3>Bridging Distributed Systems Rigor with Production AI</h3>
+            <blockquote class="about-quote">
+              "Reliable software starts with clear architectural boundaries, verifiable data integrity, and disciplined engineering tradeoffs."
+            </blockquote>
+            <p>
+              Over the past 8 years, I have helped engineering teams turn complex, ambiguous product requirements into dependable production systems. My background spans high-concurrency backend architecture—transitioning legacy monoliths into event-driven microservices in Python and Go—alongside hands-on machine learning and agentic LLM development.
+            </p>
+            <p class="mb-0">
+              Whether enforcing strict tenant isolation for 500+ enterprise SaaS clients with PostgreSQL Row-Level Security, processing 5M+ daily transactions through real-time fraud pipelines, or designing multi-step RAG and evaluation workflows, I focus on systems that remain observable, secure, and maintainable under load.
+            </p>
+
+            <div class="about-facts-grid">
+              <div class="about-fact-item">
+                <span class="about-fact-label">Specialization</span>
+                <span class="about-fact-value">Distributed Systems &amp; LLM Orchestration</span>
+              </div>
+              <div class="about-fact-item">
+                <span class="about-fact-label">Experience</span>
+                <span class="about-fact-value">8+ Years (Backend, Data &amp; AI)</span>
+              </div>
+              <div class="about-fact-item">
+                <span class="about-fact-label">Education</span>
+                <span class="about-fact-value">B.Sc. in Software Engineering (AASTU)</span>
+              </div>
+              <div class="about-fact-item">
+                <span class="about-fact-label">Core Languages</span>
+                <span class="about-fact-value">Python, Go, TypeScript, Java, SQL</span>
+              </div>
+              <div class="about-fact-item">
+                <span class="about-fact-label">Email</span>
+                <span class="about-fact-value"><a href="mailto:amanuyosi12@gmail.com">amanuyosi12@gmail.com</a></span>
+              </div>
+              <div class="about-fact-item">
+                <span class="about-fact-label">Availability</span>
+                <span class="about-fact-value">Full-Time, Contract &amp; Remote</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#resume" class="btn-classic-outline-dark"><i class="bi bi-journal-text"></i> View Experience Timeline</a>
+              <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="btn-classic-outline-dark"><i class="bi bi-github"></i> GitHub Profile</a>
+            </div>
+          </div>
+
         </div>
-
       </div>
 
     </section><!-- /About Section -->
@@ -154,135 +208,136 @@
     <section id="stats" class="stats section light-background">
 
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-kicker">02 / Track Record</span>
         <h2>Key Metrics &amp; Impact</h2>
-        <p>Quantifiable results delivered across high-scale distributed systems and production AI deployments.</p>
+        <p>Quantifiable outcomes delivered across high-concurrency microservices, financial data streams, and production AI platforms.</p>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-clock-history"></i>
-              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Years Experience</strong> in Backend &amp; AI Engineering</p>
-            </div>
-          </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="row g-4">
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-speedometer2"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span><span style="font-size: 32px; font-weight: 700; color: var(--heading-color);">M+</span>
+            <div class="stats-card">
+              <div class="stats-icon"><i class="bi bi-clock-history"></i></div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter">8</span><span class="stats-suffix">+</span>
               </div>
-              <p><strong>Monthly Requests</strong> handled with sub-100ms latency</p>
+              <p><strong>Years Experience</strong>Architecting backend services, data pipelines, and ML/AI systems.</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-robot"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Production AI Systems</strong> deployed (LLMs, Fraud, Vision)</p>
+            <div class="stats-card">
+              <div class="stats-icon"><i class="bi bi-speedometer2"></i></div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter">10</span><span class="stats-suffix">M+</span>
+              </div>
+              <p><strong>Monthly Requests</strong>Handled at sub-100ms latency with 3x post-migration throughput.</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-buildings"></i>
-              <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Enterprise Clients</strong> supported via multi-tenant SaaS</p>
+            <div class="stats-card">
+              <div class="stats-icon"><i class="bi bi-cpu"></i></div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter">12</span><span class="stats-suffix">+</span>
+              </div>
+              <p><strong>Production AI Systems</strong>Delivered across fraud scoring, document OCR, vision, and LLM agents.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-card">
+              <div class="stats-icon"><i class="bi bi-shield-check"></i></div>
+              <div class="stats-number">
+                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1" class="purecounter">500</span><span class="stats-suffix">+</span>
+              </div>
+              <p><strong>Enterprise Clients</strong>Supported on multi-tenant SaaS with PostgreSQL Row-Level Security.</p>
             </div>
           </div>
 
         </div>
-
       </div>
 
     </section><!-- /Stats Section -->
 
-    <!-- Skills Section -->
+    <!-- Skills / Capabilities Section -->
     <section id="skills" class="skills section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Core Competencies &amp; Technical Skills</h2>
-        <p>Comprehensive technical stack across distributed backend engineering, machine learning pipelines, LLM orchestration, and cloud infrastructure.</p>
-      </div><!-- End Section Title -->
+        <span class="section-kicker">03 / Capabilities</span>
+        <h2>Core Competencies &amp; Technical Stack</h2>
+        <p>Focused engineering depth across distributed backends, applied machine learning, agentic LLM workflows, and cloud infrastructure.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4 skills-content">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="row g-4">
 
           <!-- Backend & Distributed Systems -->
           <div class="col-lg-6">
-            <div class="competency-card h-100">
+            <div class="competency-card">
               <div class="competency-header">
                 <div class="competency-icon"><i class="bi bi-hdd-network"></i></div>
                 <div>
-                  <h3 class="mb-0">Backend &amp; Distributed Systems</h3>
-                  <small class="text-muted">High-concurrency &amp; event-driven microservices</small>
+                  <h3>Backend &amp; Distributed Systems</h3>
+                  <div class="competency-sub">Event-driven microservices, API design &amp; multi-tenancy</div>
                 </div>
               </div>
               <div class="tech-badges">
                 <span class="tech-badge">FastAPI</span>
                 <span class="tech-badge">Go (Golang)</span>
                 <span class="tech-badge">Apache Kafka</span>
-                <span class="tech-badge">Redis</span>
                 <span class="tech-badge">PostgreSQL (RLS)</span>
+                <span class="tech-badge">Redis</span>
                 <span class="tech-badge">Cassandra</span>
                 <span class="tech-badge">Django</span>
                 <span class="tech-badge">Celery</span>
                 <span class="tech-badge">Node.js</span>
               </div>
-              <ul class="mt-3">
-                <li>Architected backend ecosystems handling 10M+ monthly requests with sub-100ms response latency.</li>
-                <li>Led monolithic transitions to event-driven microservices (FastAPI, Go, Kafka), increasing system throughput by 3x.</li>
-                <li>Engineered multi-tenant SaaS systems for 500+ enterprise clients with PostgreSQL Row-Level Security (RLS).</li>
-                <li>Built resilient payment orchestrators with idempotency, exponential backoff retries, and dead-letter queues.</li>
+              <ul>
+                <li>Decomposing legacy monoliths into loosely coupled, event-driven microservices with explicit API contracts.</li>
+                <li>Designing fault-tolerant workflows with idempotency keys, exponential backoff retries, and dead-letter queues.</li>
+                <li>Enforcing strict tenant data isolation and auditability via PostgreSQL Row-Level Security (RLS).</li>
               </ul>
             </div>
           </div>
 
-          <!-- Machine Learning & AI -->
+          <!-- Machine Learning & Applied AI -->
           <div class="col-lg-6">
-            <div class="competency-card h-100">
+            <div class="competency-card">
               <div class="competency-header">
-                <div class="competency-icon"><i class="bi bi-cpu"></i></div>
+                <div class="competency-icon"><i class="bi bi-diagram-3"></i></div>
                 <div>
-                  <h3 class="mb-0">Machine Learning &amp; AI</h3>
-                  <span class="text-muted small">Deep learning, computer vision &amp; recommendation</span>
+                  <h3>Machine Learning &amp; Inference Pipelines</h3>
+                  <div class="competency-sub">Real-time scoring, NLP/BERT, computer vision &amp; MLOps</div>
                 </div>
               </div>
               <div class="tech-badges">
                 <span class="tech-badge">PyTorch</span>
                 <span class="tech-badge">TensorFlow</span>
                 <span class="tech-badge">Scikit-learn</span>
-                <span class="tech-badge">BERT</span>
-                <span class="tech-badge">Hugging Face</span>
-                <span class="tech-badge">MLflow</span>
-                <span class="tech-badge">ONNX Runtime</span>
-                <span class="tech-badge">OpenCV</span>
                 <span class="tech-badge">XGBoost</span>
+                <span class="tech-badge">BERT / Transformers</span>
+                <span class="tech-badge">ONNX Runtime</span>
+                <span class="tech-badge">MLflow</span>
+                <span class="tech-badge">OpenCV</span>
               </div>
-              <ul class="mt-3">
-                <li>Built recommendation engines combining collaborative filtering and BERT for personalized learning serving 2M+ users.</li>
-                <li>Trained real-time fraud detection pipelines (Kafka + XGBoost) processing 5M+ daily transactions.</li>
-                <li>Implemented PyTorch defect segmentation pipelines using Mask2Former and MLflow experiment tracking.</li>
-                <li>Optimized model deployment for latency-critical inference pipelines using ONNX Runtime and Azure Cognitive Services.</li>
+              <ul>
+                <li>Streaming feature engineering and low-latency inference pipelines built on Kafka and ONNX Runtime.</li>
+                <li>Hybrid recommendation systems blending collaborative filtering with contextual BERT embeddings.</li>
+                <li>Reproducible model training, versioning, A/B testing, and automated retraining workflows via MLflow.</li>
               </ul>
             </div>
           </div>
 
-          <!-- LLM & AI Evaluation -->
+          <!-- LLM Orchestration & AI Evaluation -->
           <div class="col-lg-6">
-            <div class="competency-card h-100">
+            <div class="competency-card">
               <div class="competency-header">
-                <div class="competency-icon"><i class="bi bi-robot"></i></div>
+                <div class="competency-icon"><i class="bi bi-chat-square-text"></i></div>
                 <div>
-                  <h3 class="mb-0">LLM Orchestration &amp; AI Evaluation</h3>
-                  <span class="text-muted small">Agentic workflows, RAG, and rigorous model benchmarking</span>
+                  <h3>LLM Orchestration &amp; AI Evaluation</h3>
+                  <div class="competency-sub">Agentic tool use, RAG systems &amp; trajectory quality assurance</div>
                 </div>
               </div>
               <div class="tech-badges">
@@ -290,28 +345,27 @@
                 <span class="tech-badge">LangChain</span>
                 <span class="tech-badge">RAG Pipelines</span>
                 <span class="tech-badge">Agentic Workflows</span>
-                <span class="tech-badge">Prompt Engineering</span>
                 <span class="tech-badge">RLHF</span>
                 <span class="tech-badge">OpenClaw Trajectories</span>
-                <span class="tech-badge">Data Annotation</span>
+                <span class="tech-badge">Prompt Engineering</span>
+                <span class="tech-badge">Model Benchmarking</span>
               </div>
-              <ul class="mt-3">
-                <li>Designed multi-step agentic workflows requiring autonomous tool use, reasoning documentation, and error recovery.</li>
-                <li>Integrated LLM-based tutoring assistants (GPT-4 + RAG) deployed on Kubernetes for ambiguous query resolution.</li>
-                <li>Created annotation guidelines for complex reasoning tasks and OpenClaw trajectory validation at Mindrift.</li>
-                <li>Evaluated LLM responses for safety, helpfulness, and factual accuracy QA across 50+ annotators, boosting quality by 35%.</li>
+              <ul>
+                <li>Building grounded RAG assistants and multi-step tool-calling agents capable of handling underspecified queries.</li>
+                <li>Authoring structured evaluation rubrics and reasoning-trajectory guidelines for factuality, safety, and helpfulness.</li>
+                <li>Leading QA review cycles and annotator calibration to systematically raise model output quality.</li>
               </ul>
             </div>
           </div>
 
-          <!-- Cloud, DevOps & Tools -->
+          <!-- Cloud, DevOps & Observability -->
           <div class="col-lg-6">
-            <div class="competency-card h-100">
+            <div class="competency-card">
               <div class="competency-header">
                 <div class="competency-icon"><i class="bi bi-cloud-check"></i></div>
                 <div>
-                  <h3 class="mb-0">Cloud, DevOps &amp; Infrastructure</h3>
-                  <span class="text-muted small">Container orchestration, CI/CD, and system observability</span>
+                  <h3>Cloud, Infrastructure &amp; Reliability</h3>
+                  <div class="competency-sub">Container orchestration, Infrastructure as Code &amp; CI/CD</div>
                 </div>
               </div>
               <div class="tech-badges">
@@ -320,138 +374,156 @@
                 <span class="tech-badge">AWS (ECS)</span>
                 <span class="tech-badge">Terraform</span>
                 <span class="tech-badge">CI/CD Pipelines</span>
-                <span class="tech-badge">Git</span>
+                <span class="tech-badge">Nginx</span>
                 <span class="tech-badge">Linux / Bash</span>
-                <span class="tech-badge">Jupyter Notebooks</span>
+                <span class="tech-badge">Git</span>
               </div>
-              <ul class="mt-3">
-                <li>Containerized and orchestrated multi-service architectures using Docker Compose, AWS ECS, and Azure Kubernetes (AKS).</li>
-                <li>Defined reproducible infrastructure as code using Terraform for cloud provisioning and networking.</li>
-                <li>Established CI/CD and observability patterns that reduced deployment errors and standardized release quality.</li>
-                <li>Solved 500+ algorithmic problems on LeetCode and Codeforces with a focus on optimal complexity and scalability.</li>
+              <ul>
+                <li>Provisioning repeatable cloud environments and networking topologies with Terraform across AWS ECS and Azure AKS.</li>
+                <li>Standardizing multi-service Docker Compose setups for local parity and predictable production rollouts.</li>
+                <li>Instituting structured logging, observability patterns, and automated CI/CD gates to cut deployment regressions.</li>
               </ul>
             </div>
           </div>
 
+        </div>
+
+        <div class="foundations-strip">
+          <div>
+            <div class="foundations-label">Programming Languages &amp; Algorithmic Foundations</div>
+            <div class="foundations-sub">500+ algorithmic problems solved across LeetCode &amp; Codeforces with emphasis on time/space complexity.</div>
+          </div>
+          <div class="tech-badges m-0">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Go</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Bash</span>
+          </div>
         </div>
 
       </div>
 
     </section><!-- /Skills Section -->
 
-    <!-- Resume Section -->
+    <!-- Resume / Experience Section -->
     <section id="resume" class="resume section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>
-          Senior Backend &amp; AI Engineer with 8 years of experience architecting distributed systems, high-concurrency event-driven microservices, and production LLM orchestration.
-        </p>
-        <div class="mt-3">
-          <a href="Amanuel_Yosef_CV.pdf" target="_blank" class="btn-resume-download">
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <span class="section-kicker">04 / Curriculum Vitae</span>
+            <h2>Experience &amp; Education</h2>
+            <p>A chronological record of engineering leadership, distributed systems delivery, AI research, and academic training.</p>
+          </div>
+          <a href="Amanuel_Yosef_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-classic-primary">
             <i class="bi bi-download"></i> View / Download Full CV (PDF)
           </a>
         </div>
       </div>
 
-      <!-- Resume Content -->
-      <div class="container" data-aos="fade-up">
-        <div class="row">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="row g-5">
 
-          <!-- Left Column: Summary, Education & AI Evaluation -->
+          <!-- Left Column: Education & AI Research -->
           <div class="col-lg-6">
 
-            <h3 class="resume-title">Professional Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Amanuel Yosef</h4>
-              <p><em>Senior Backend &amp; AI Engineer with 8 years of experience architecting high-performance distributed systems and production-grade LLM orchestration. Proven track record of scaling architectures to handle 10M+ monthly requests and building complex agentic workflows using GPT-4 and LangChain. Expert in Python, Go, and event-driven microservices (Kafka).</em></p>
-              <ul>
-                <li>Addis Ababa, Ethiopia</li>
-                <li>+251 928 169 211</li>
-                <li>amanuyosi12@gmail.com</li>
-              </ul>
-            </div>
+            <h3 class="resume-title mt-0">Education</h3>
 
-            <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>B.Sc. in Software Engineering</h4>
-              <h5>03/2014 – 08/2019</h5>
-              <p><em>Addis Ababa Science and Technology University (AASTU) | Addis Ababa, Ethiopia</em></p>
+              <div class="resume-meta">
+                <h5>03/2014 – 08/2019</h5>
+                <span class="resume-org">Addis Ababa Science and Technology University (AASTU) &middot; Addis Ababa</span>
+              </div>
               <ul>
-                <li>Built a strong foundation in distributed systems, machine learning, algorithms, database systems, and system design.</li>
-                <li>Applied theoretical concepts to practical projects involving backend development and data-driven applications.</li>
+                <li>Built a rigorous foundation in distributed systems, algorithms, database internals, machine learning, and software architecture.</li>
+                <li>Applied systems coursework directly to backend services and data-driven engineering projects.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Advanced Algorithms &amp; Data Structures</h4>
-              <h5>04/2017 – 06/2019</h5>
-              <p><em>Coding Academy | Addis Ababa, Ethiopia</em></p>
+              <div class="resume-meta">
+                <h5>04/2017 – 06/2019</h5>
+                <span class="resume-org">Coding Academy &middot; Addis Ababa</span>
+              </div>
               <ul>
-                <li>Completed an intensive program focused on advanced data structures, algorithmic problem solving, and system optimization.</li>
-                <li>Solved 500+ algorithmic problems on platforms such as LeetCode and Codeforces, demonstrating strong analytical and problem-solving skills.</li>
-                <li>Strengthened expertise in writing efficient, scalable, and optimized code for real-world applications.</li>
+                <li>Completed intensive training in graph algorithms, dynamic programming, and low-level system optimization.</li>
+                <li>Solved 500+ competitive programming challenges on LeetCode and Codeforces, sharpening complexity analysis for production workloads.</li>
               </ul>
             </div>
 
-            <h3 class="resume-title">AI Training &amp; LLM Research</h3>
+            <h3 class="resume-title">AI Training &amp; Research</h3>
+
             <div class="resume-item">
               <h4>AI Annotator &amp; QA Lead</h4>
-              <h5>12/2023 – 06/2025</h5>
-              <p><em>Mindrift | Remote</em></p>
+              <div class="resume-meta">
+                <h5>12/2023 – 06/2025</h5>
+                <span class="resume-org">Mindrift &middot; Remote</span>
+              </div>
               <ul>
-                <li>Evaluated LLM responses and search engine results for safety, helpfulness, and factuality. Reviewed submissions from 50+ annotators and provided constructive feedback to improve quality by 35%.</li>
-                <li>Designed annotation guidelines for ambiguous, multi-step reasoning tasks. Documented both actions taken and reasoning behind decisions directly relevant to OpenClaw trajectory validation.</li>
+                <li><strong>Quality Leadership:</strong> Audited LLM outputs and search results for safety, helpfulness, and factual accuracy across 50+ annotators, raising overall submission quality by 35%.</li>
+                <li><strong>Reasoning &amp; Trajectory Design:</strong> Authored annotation guidelines for ambiguous multi-step tasks, documenting tool actions and decision rationale for OpenClaw trajectory validation.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Machine Learning Research Assistant</h4>
-              <h5>01/2022 – 05/2023</h5>
-              <p><em>Addis Ababa Science and Technology University | Addis Ababa, Ethiopia</em></p>
+              <div class="resume-meta">
+                <h5>01/2022 – 05/2023</h5>
+                <span class="resume-org">Addis Ababa Science and Technology University &middot; Addis Ababa</span>
+              </div>
               <ul>
-                <li>Implemented PyTorch training pipelines for solar cell defect segmentation using Mask2Former. Automated data preprocessing and experiment tracking with MLflow to standardize reproducibility.</li>
-                <li>Focused on research workflows requiring careful documentation, defensible methodology decisions, and multi-step reasoning.</li>
+                <li><strong>Computer Vision Pipelines:</strong> Implemented PyTorch segmentation models (Mask2Former) for solar cell defect detection with automated preprocessing.</li>
+                <li><strong>Experiment Reproducibility:</strong> Standardized training runs and metric tracking with MLflow alongside defensible research methodology documentation.</li>
               </ul>
             </div>
 
           </div>
 
-          <!-- Right Column: Professional Backend & AI Experience -->
+          <!-- Right Column: Professional Experience -->
           <div class="col-lg-6">
 
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title mt-0">Professional Experience</h3>
 
             <div class="resume-item">
               <h4>Senior AI/ML Engineer</h4>
-              <h5>05/2021 – 08/2025</h5>
-              <p><em>Upwork | Remote</em></p>
+              <div class="resume-meta">
+                <h5>05/2021 – 08/2025</h5>
+                <span class="resume-org">Upwork &middot; Remote</span>
+              </div>
               <ul>
-                <li>Built 12+ production AI systems including fraud detection (Kafka + XGBoost, 5M+ daily transactions), document OCR, and LLM chatbots using LangChain and GPT-4.</li>
-                <li>Led a 4-person team to develop customer support automation that reduced response time by 70%. Mentored 6 junior engineers on model versioning, A/B testing, and automated retraining.</li>
-                <li>Designed multi-step agentic workflows requiring tool use, reasoning documentation, and handling underspecified client requirements.</li>
+                <li><strong>Production AI Delivery:</strong> Built and shipped 12+ AI systems, including real-time fraud detection (Kafka + XGBoost at 5M+ daily transactions), document OCR, and LangChain/GPT-4 assistants.</li>
+                <li><strong>Team Leadership &amp; Impact:</strong> Led a 4-person engineering team to launch customer support automation that reduced response times by 70%, while mentoring 6 junior engineers on model versioning, A/B testing, and automated retraining.</li>
+                <li><strong>Agentic Architecture:</strong> Designed multi-step agent workflows with structured tool use, reasoning logs, and graceful handling of underspecified client requirements.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Senior Backend &amp; Data Engineer</h4>
-              <h5>07/2022 – 08/2024</h5>
-              <p><em>Agile Lab | Italy (Remote)</em></p>
+              <div class="resume-meta">
+                <h5>07/2022 – 08/2024</h5>
+                <span class="resume-org">Agile Lab &middot; Italy (Remote)</span>
+              </div>
               <ul>
-                <li>Architected and scaled a high-concurrency backend ecosystem handling 10M+ monthly requests with sub-100ms latency, leading the transition from a legacy monolith to event-driven microservices (FastAPI, Go, Kafka) that increased system throughput by 3x.</li>
-                <li>Engineered a secure multi-tenant SaaS architecture for 500+ enterprise clients, implementing PostgreSQL row-level security (RLS) and robust data isolation protocols to meet stringent global compliance and data integrity standards.</li>
-                <li>Directed technical excellence and team growth by mentoring 4 engineers on advanced system design and code quality, while establishing CI/CD and observability patterns that reduced deployment errors and improved architectural consistency across the organization.</li>
+                <li><strong>Distributed Scale:</strong> Architected a high-concurrency backend handling 10M+ monthly requests at sub-100ms latency, leading the migration from a legacy monolith to event-driven microservices (FastAPI, Go, Kafka) for a 3x throughput gain.</li>
+                <li><strong>Multi-Tenant Security:</strong> Engineered SaaS isolation for 500+ enterprise clients using PostgreSQL Row-Level Security (RLS) and strict data integrity controls.</li>
+                <li><strong>Engineering Standards:</strong> Mentored 4 engineers on system design and code review discipline while establishing CI/CD and observability practices that reduced deployment errors.</li>
               </ul>
             </div>
 
             <div class="resume-item">
               <h4>Software Engineer — Fintech &amp; Freelance</h4>
-              <h5>09/2016 – 05/2018</h5>
-              <p><em>Financial Services &amp; Independent Clients | Addis Ababa / Remote</em></p>
+              <div class="resume-meta">
+                <h5>09/2016 – 05/2018</h5>
+                <span class="resume-org">Financial Services &amp; Independent Clients &middot; Addis Ababa / Remote</span>
+              </div>
               <ul>
-                <li>Built internal ERP modules and payment gateway integrations for a local financial institution.</li>
-                <li>Developed small business websites, dashboards, and basic automation scripts.</li>
+                <li>Developed internal ERP modules and payment gateway integrations for a local financial institution.</li>
+                <li>Delivered business web applications, operational dashboards, and workflow automation tools for independent clients.</li>
               </ul>
             </div>
 
@@ -465,179 +537,303 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Projects &amp; Architecture</h2>
-        <p>Production distributed architectures, LLM orchestration platforms, real-time event pipelines, and software systems.</p>
-      </div><!-- End Section Title -->
+        <span class="section-kicker">05 / Selected Work</span>
+        <h2>Featured Projects &amp; Systems</h2>
+        <p>Representative systems spanning adaptive LLM platforms, fault-tolerant payment orchestration, full-stack collaboration, and applied vision.</p>
+      </div>
 
       <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- Filter Navigation -->
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="60">
             <li data-filter="*" class="filter-active">All Projects</li>
-            <li data-filter=".filter-ai">AI &amp; LLM Orchestration</li>
-            <li data-filter=".filter-backend">Distributed Systems &amp; Backend</li>
-            <li data-filter=".filter-fullstack">Full-Stack &amp; Platforms</li>
+            <li data-filter=".filter-ai">AI &amp; LLM Systems</li>
+            <li data-filter=".filter-backend">Distributed Backends</li>
+            <li data-filter=".filter-fullstack">Full-Stack &amp; Mobile</li>
           </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="120">
 
             <!-- Project 1: LearnWise -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-backend">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/learnwise.svg" class="img-fluid" alt="LearnWise Adaptive Learning Platform">
-                <div class="portfolio-info professional-info">
-                  <h4>LearnWise — Adaptive Learning Platform</h4>
-                  <p class="text-white-50 small mb-1"><strong>Lead Architect &amp; AI Engineer (06/2023 – 06/2025)</strong></p>
-                  <p class="small text-white">Built recommendation engine using collaborative filtering and BERT for personalized learning serving 2M+ users. Kafka pipeline processing 100k events/day. Integrated GPT-4 + RAG tutoring assistant on Azure Kubernetes.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">FastAPI</span>
-                    <span class="portfolio-tag">Cassandra</span>
-                    <span class="portfolio-tag">Kafka</span>
-                    <span class="portfolio-tag">PyTorch</span>
-                    <span class="portfolio-tag">LangChain</span>
-                    <span class="portfolio-tag">GPT-4</span>
-                    <span class="portfolio-tag">AKS</span>
-                  </div>
-                  <a href="assets/img/portfolio/learnwise.svg" title="LearnWise — Adaptive Learning Platform with LLM" data-gallery="portfolio-gallery-ai" data-glightbox="title: LearnWise — Adaptive Learning Platform with LLM; description: Built recommendation engine using collaborative filtering and BERT serving 2M+ users. Real-time progress pipeline processing 100k events/day via Kafka streams. Integrated LLM-based tutoring assistant (GPT-4 + RAG) on Azure Kubernetes. Led a team of 5 engineers." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Read LearnWise Case Study" class="details-link"><i class="bi bi-journal-text"></i></a>
+              <article class="project-card">
+                <div class="project-thumb">
+                  <img src="assets/img/portfolio/learnwise.svg" alt="LearnWise system architecture diagram" width="800" height="500" loading="lazy" decoding="async">
+                  <a href="assets/img/portfolio/learnwise.svg" class="glightbox project-zoom-btn" title="Enlarge architecture diagram" data-gallery="portfolio-gallery" data-glightbox="title: LearnWise — Adaptive Learning Platform; description: Dual-model BERT + collaborative filtering recommender serving 2M+ learners, Kafka streaming at 100k events/day, and GPT-4 + RAG tutoring deployed on Azure Kubernetes.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">AI &amp; Distributed Systems</span>
+                    <span class="project-period">06/2023 – 06/2025</span>
+                  </div>
+                  <h3 class="project-title">LearnWise</h3>
+                  <div class="project-role">Lead Architect &amp; AI Engineer &middot; Team of 5</div>
+                  <p class="project-summary">
+                    Adaptive learning platform serving 2M+ learners. Combined collaborative filtering with BERT recommendations, a 100k events/day Kafka progress pipeline, and a GPT-4 + RAG tutoring assistant on Azure Kubernetes.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">FastAPI</span>
+                    <span class="project-tag">Kafka</span>
+                    <span class="project-tag">Cassandra</span>
+                    <span class="project-tag">PyTorch</span>
+                    <span class="project-tag">LangChain</span>
+                    <span class="project-tag">AKS</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=learnwise" class="project-link">
+                      Read Case Study <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 2: PayStream -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/paystream.svg" class="img-fluid" alt="PayStream Payment Orchestration">
-                <div class="portfolio-info professional-info">
-                  <h4>PayStream — Payment Orchestration</h4>
-                  <p class="text-white-50 small mb-1"><strong>Backend Engineer (01/2022 – 02/2023)</strong></p>
-                  <p class="small text-white">Payment orchestrator routing across 5+ gateways with automatic failover and 99.99% uptime. Built idempotency, retries, dead-letter queues, and real-time fraud detection (rules + ML) reducing chargebacks by 18%.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">Go</span>
-                    <span class="portfolio-tag">Python</span>
-                    <span class="portfolio-tag">FastAPI</span>
-                    <span class="portfolio-tag">Kafka</span>
-                    <span class="portfolio-tag">Redis</span>
-                    <span class="portfolio-tag">AWS ECS</span>
-                    <span class="portfolio-tag">Terraform</span>
-                  </div>
-                  <a href="assets/img/portfolio/paystream.svg" title="PayStream — High-Throughput Payment Orchestration" data-gallery="portfolio-gallery-backend" data-glightbox="title: PayStream — High-Throughput Payment Orchestration; description: Built payment orchestrator routing to 5+ gateways with automatic failover and 99.99% uptime. Implemented idempotency, exponential backoff retries, and dead-letter queues. Real-time fraud detection reducing chargebacks by 18%." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef" title="GitHub Profile" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-github"></i></a>
+              <article class="project-card">
+                <div class="project-thumb">
+                  <img src="assets/img/portfolio/paystream.svg" alt="PayStream payment orchestration architecture diagram" width="800" height="500" loading="lazy" decoding="async">
+                  <a href="assets/img/portfolio/paystream.svg" class="glightbox project-zoom-btn" title="Enlarge architecture diagram" data-gallery="portfolio-gallery" data-glightbox="title: PayStream — Payment Orchestration; description: Resilient payment router across 5+ gateways achieving 99.99% uptime via idempotency keys, exponential backoff retries, dead-letter queues, and real-time fraud scoring (-18% chargebacks).">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">Fintech Infrastructure</span>
+                    <span class="project-period">01/2022 – 02/2023</span>
+                  </div>
+                  <h3 class="project-title">PayStream</h3>
+                  <div class="project-role">Backend Engineer &middot; Go, Python &amp; AWS ECS</div>
+                  <p class="project-summary">
+                    High-throughput payment orchestrator routing across 5+ gateways with automatic failover and 99.99% uptime. Built idempotent transaction ledgers, DLQ recovery, and hybrid rules + ML fraud detection (-18% chargebacks).
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Go</span>
+                    <span class="project-tag">FastAPI</span>
+                    <span class="project-tag">Kafka</span>
+                    <span class="project-tag">Redis</span>
+                    <span class="project-tag">AWS ECS</span>
+                    <span class="project-tag">Terraform</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=paystream" class="project-link">
+                      Read Case Study <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 3: Study Buddy -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend filter-fullstack">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/studybuddy.svg" class="img-fluid" alt="Study Buddy Collaborative Platform">
-                <div class="portfolio-info professional-info">
-                  <h4>Study Buddy — Collaborative Platform</h4>
-                  <p class="text-white-50 small mb-1"><strong>Full-Stack Lead (09/2020 – 08/2021)</strong></p>
-                  <p class="small text-white">Full-stack platform with WebSocket chat, Pomodoro timers, Jitsi meetings, and streak analytics. Integrated Chapa payments, JWT + Google OAuth, caching, and Docker Compose containerization.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">Django</span>
-                    <span class="portfolio-tag">React</span>
-                    <span class="portfolio-tag">WebSockets</span>
-                    <span class="portfolio-tag">Redis</span>
-                    <span class="portfolio-tag">Docker</span>
-                    <span class="portfolio-tag">PostgreSQL</span>
-                    <span class="portfolio-tag">Celery</span>
-                  </div>
-                  <a href="assets/img/portfolio/studybuddy.svg" title="Study Buddy — Real-Time Collaborative Platform" data-gallery="portfolio-gallery-fullstack" data-glightbox="title: Study Buddy — Real-Time Collaborative Platform; description: Built full-stack platform with WebSocket chat, Pomodoro timers, Jitsi video meetings, streak analytics, Chapa payments, JWT + OAuth. Containerized with Docker Compose (PostgreSQL, Redis, Celery, Nginx)." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef" title="GitHub Profile" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-github"></i></a>
+              <article class="project-card">
+                <div class="project-thumb">
+                  <img src="assets/img/portfolio/studybuddy.svg" alt="Study Buddy collaborative platform architecture diagram" width="800" height="500" loading="lazy" decoding="async">
+                  <a href="assets/img/portfolio/studybuddy.svg" class="glightbox project-zoom-btn" title="Enlarge architecture diagram" data-gallery="portfolio-gallery" data-glightbox="title: Study Buddy — Real-Time Collaborative Platform; description: Full-stack study platform featuring WebSocket chat, Pomodoro timers, Jitsi video rooms, streak analytics, Chapa payments, and a 5-service Docker Compose stack.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">Real-Time Platform</span>
+                    <span class="project-period">09/2020 – 08/2021</span>
+                  </div>
+                  <h3 class="project-title">Study Buddy</h3>
+                  <div class="project-role">Full-Stack Lead &middot; Architecture &amp; Mentorship</div>
+                  <p class="project-summary">
+                    Real-time collaborative study platform integrating WebSocket chat, Pomodoro timers, Jitsi video rooms, and streak analytics with Chapa payments, JWT + Google OAuth, Redis caching, and Docker Compose.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Django</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">WebSockets</span>
+                    <span class="project-tag">Redis</span>
+                    <span class="project-tag">Celery</span>
+                    <span class="project-tag">Docker</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=studybuddy" class="project-link">
+                      Read Case Study <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 4: Nisr Market -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/nisr_market_app_logo.png" class="img-fluid" alt="Nisr Market Logo">
-                <div class="portfolio-info professional-info">
-                  <h4>Nisr Market</h4>
-                  <p class="text-white-50 small mb-1"><strong>Lead Developer &amp; Architect</strong></p>
-                  <p class="small text-white">Multi-platform Ethiopian P2P commerce ecosystem with Android app, responsive web discovery, admin panel, and search infrastructure.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">Android</span>
-                    <span class="portfolio-tag">React</span>
-                    <span class="portfolio-tag">Firebase</span>
-                    <span class="portfolio-tag">Algolia</span>
-                  </div>
-                  <a href="assets/img/nisr_market_app_logo.png" title="Nisr Market" data-gallery="portfolio-gallery-fullstack" data-glightbox="title: Nisr Market; description: Multi-platform Ethiopian P2P commerce ecosystem with Android app, responsive web discovery, admin panel, and search infrastructure." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef/nisr-market" title="Repository" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <article class="project-card">
+                <div class="project-thumb project-thumb-logo">
+                  <picture>
+                    <source srcset="assets/img/nisr_market_app_logo.webp" type="image/webp">
+                    <img src="assets/img/nisr_market_app_logo.png" alt="Nisr Market application emblem" width="379" height="379" loading="lazy" decoding="async">
+                  </picture>
+                  <a href="assets/img/nisr_market_app_logo.png" class="glightbox project-zoom-btn" title="Preview image" data-gallery="portfolio-gallery" data-glightbox="title: Nisr Market; description: Multi-platform Ethiopian P2P commerce ecosystem with Android app, responsive web discovery, admin moderation panel, and Algolia instant search.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">Marketplace Ecosystem</span>
+                    <span class="project-period">Mobile &amp; Web</span>
+                  </div>
+                  <h3 class="project-title">Nisr Market</h3>
+                  <div class="project-role">Lead Developer &amp; Architect</div>
+                  <p class="project-summary">
+                    Multi-platform Ethiopian P2P commerce ecosystem combining a native Android marketplace app, responsive web discovery portal, admin moderation panel, and Algolia-backed instant search.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Android</span>
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Firebase</span>
+                    <span class="project-tag">Algolia</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=nisr-market" class="project-link">
+                      Overview <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef/nisr-market" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> Repository
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 5: Children Tracker -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/child_tracker_app_logo.png" class="img-fluid" alt="Children Tracker Logo">
-                <div class="portfolio-info professional-info">
-                  <h4>Children Tracker</h4>
-                  <p class="text-white-50 small mb-1"><strong>Lead Developer</strong></p>
-                  <p class="small text-white">Real-time GPS family safety app with geofencing, consent-first controls, background location services, and role-specific parent/child UX.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">Android</span>
-                    <span class="portfolio-tag">GPS</span>
-                    <span class="portfolio-tag">Background Services</span>
-                    <span class="portfolio-tag">Firebase</span>
-                  </div>
-                  <a href="assets/img/child_tracker_app_logo.png" title="Children Tracker" data-gallery="portfolio-gallery-fullstack" data-glightbox="title: Children Tracker; description: Real-time GPS family safety app with geofencing, consent-first controls, background location services, and role-specific parent/child UX." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef/child-tracker" title="Repository" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <article class="project-card">
+                <div class="project-thumb project-thumb-logo">
+                  <picture>
+                    <source srcset="assets/img/child_tracker_app_logo.webp" type="image/webp">
+                    <img src="assets/img/child_tracker_app_logo.png" alt="Children Tracker application emblem" width="320" height="320" loading="lazy" decoding="async">
+                  </picture>
+                  <a href="assets/img/child_tracker_app_logo.png" class="glightbox project-zoom-btn" title="Preview image" data-gallery="portfolio-gallery" data-glightbox="title: Children Tracker; description: Real-time GPS family safety application featuring geofencing alerts, consent-first privacy controls, background location services, and dedicated parent/child interfaces.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">Mobile &amp; Geolocation</span>
+                    <span class="project-period">Android</span>
+                  </div>
+                  <h3 class="project-title">Children Tracker</h3>
+                  <div class="project-role">Lead Developer</div>
+                  <p class="project-summary">
+                    Real-time GPS family safety application engineered with geofencing alerts, consent-first privacy controls, battery-aware background location services, and distinct parent/child workflows.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Android</span>
+                    <span class="project-tag">GPS &amp; Geofencing</span>
+                    <span class="project-tag">Background Services</span>
+                    <span class="project-tag">Firebase</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=child-tracker" class="project-link">
+                      Overview <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef/child-tracker" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> Repository
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 6: AI Food Ingredient Recognizer -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-fullstack">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/food_recognizer_logo.png" class="img-fluid" alt="AI Food Recognizer Logo">
-                <div class="portfolio-info professional-info">
-                  <h4>AI Food Ingredient Recognizer</h4>
-                  <p class="text-white-50 small mb-1"><strong>AI &amp; Mobile Engineer</strong></p>
-                  <p class="small text-white">Computer vision mobile experience using camera modules and multimodal AI APIs for instant ingredient-level meal analysis and classification.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">Computer Vision</span>
-                    <span class="portfolio-tag">Multimodal AI</span>
-                    <span class="portfolio-tag">Android</span>
-                    <span class="portfolio-tag">REST APIs</span>
-                  </div>
-                  <a href="assets/img/food_recognizer_logo.png" title="AI Food Ingredient Recognizer" data-gallery="portfolio-gallery-ai" data-glightbox="title: AI Food Ingredient Recognizer; description: Computer vision mobile experience using camera modules and multimodal AI APIs for instant ingredient-level meal analysis." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef/AI-Powered-Food-Ingredient-Recognizer" title="Repository" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <article class="project-card">
+                <div class="project-thumb project-thumb-logo">
+                  <picture>
+                    <source srcset="assets/img/food_recognizer_logo.webp" type="image/webp">
+                    <img src="assets/img/food_recognizer_logo.png" alt="AI Food Ingredient Recognizer emblem" width="320" height="320" loading="lazy" decoding="async">
+                  </picture>
+                  <a href="assets/img/food_recognizer_logo.png" class="glightbox project-zoom-btn" title="Preview image" data-gallery="portfolio-gallery" data-glightbox="title: AI Food Ingredient Recognizer; description: Computer vision mobile application integrating device camera pipelines with multimodal AI APIs for instant ingredient-level meal analysis and classification.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">Applied Computer Vision</span>
+                    <span class="project-period">AI &amp; Mobile</span>
+                  </div>
+                  <h3 class="project-title">AI Food Ingredient Recognizer</h3>
+                  <div class="project-role">AI &amp; Mobile Engineer</div>
+                  <p class="project-summary">
+                    Computer vision mobile application connecting native camera capture with multimodal AI APIs to perform real-time meal identification and ingredient-level nutritional breakdown.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Multimodal AI</span>
+                    <span class="project-tag">Android</span>
+                    <span class="project-tag">REST APIs</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=food-recognizer" class="project-link">
+                      Overview <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef/AI-Powered-Food-Ingredient-Recognizer" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> Repository
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
             <!-- Project 7: Automated Grain Storage System -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend filter-fullstack">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/store_control_app_logo.png" class="img-fluid" alt="Automated Grain Storage Logo">
-                <div class="portfolio-info professional-info">
-                  <h4>Automated Grain Storage System</h4>
-                  <p class="text-white-50 small mb-1"><strong>Lead IoT &amp; Systems Engineer</strong></p>
-                  <p class="small text-white">IoT environmental control system with ESP8266 and sensor-driven automation to reduce post-harvest losses and improve food security outcomes.</p>
-                  <div class="portfolio-tags">
-                    <span class="portfolio-tag">IoT</span>
-                    <span class="portfolio-tag">ESP8266</span>
-                    <span class="portfolio-tag">Sensors</span>
-                    <span class="portfolio-tag">Automation</span>
-                  </div>
-                  <a href="assets/img/store_control_app_logo.png" title="Automated Grain Storage System" data-gallery="portfolio-gallery-fullstack" data-glightbox="title: Automated Grain Storage System; description: IoT environmental control system with ESP8266 and sensor-driven automation to reduce post-harvest losses and improve food security outcomes." class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/amanuelyosef" title="GitHub Profile" target="_blank" rel="noopener noreferrer" class="details-link"><i class="bi bi-github"></i></a>
+              <article class="project-card">
+                <div class="project-thumb project-thumb-logo">
+                  <picture>
+                    <source srcset="assets/img/store_control_app_logo.webp" type="image/webp">
+                    <img src="assets/img/store_control_app_logo.png" alt="Automated Grain Storage System emblem" width="320" height="320" loading="lazy" decoding="async">
+                  </picture>
+                  <a href="assets/img/store_control_app_logo.png" class="glightbox project-zoom-btn" title="Preview image" data-gallery="portfolio-gallery" data-glightbox="title: Automated Grain Storage System; description: IoT environmental telemetry and automated ventilation control built on ESP8266 and environmental sensors to reduce post-harvest grain spoilage.">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+                <div class="project-body">
+                  <div class="project-meta-row">
+                    <span class="project-category">IoT &amp; Embedded Systems</span>
+                    <span class="project-period">AgriTech</span>
+                  </div>
+                  <h3 class="project-title">Automated Grain Storage System</h3>
+                  <div class="project-role">Lead IoT &amp; Systems Engineer</div>
+                  <p class="project-summary">
+                    Sensor-driven environmental monitoring and automated climate control built with ESP8266 microcontrollers to protect stored grain against humidity spoilage and reduce post-harvest loss.
+                  </p>
+                  <div class="project-tags">
+                    <span class="project-tag">IoT</span>
+                    <span class="project-tag">ESP8266</span>
+                    <span class="project-tag">Telemetry</span>
+                    <span class="project-tag">Automation</span>
+                  </div>
+                  <div class="project-footer">
+                    <a href="portfolio-details.html?project=grain-storage" class="project-link">
+                      Overview <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="project-link-secondary">
+                      <i class="bi bi-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
 
           </div><!-- End Portfolio Container -->
-
         </div>
-
       </div>
 
     </section><!-- /Portfolio Section -->
@@ -645,85 +841,110 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
+        <span class="section-kicker">06 / Connect</span>
         <h2>Contact</h2>
-        <p>Interested in discussing high-performance distributed systems, AI &amp; LLM engineering, or architectural leadership? Let's connect.</p>
-      </div><!-- End Section Title -->
+        <p>Available for Senior Backend &amp; AI Engineering roles, distributed systems architecture advisory, and LLM orchestration consulting.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+        <div class="row g-4">
 
           <div class="col-lg-5">
+            <div class="info-wrap d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 fw-bold mb-4">Direct Channels</h3>
 
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Location</h3>
-                  <p>Addis Ababa, Ethiopia</p>
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt"></i>
+                  <div>
+                    <h3>Location</h3>
+                    <p>Addis Ababa, Ethiopia (UTC+3 &middot; Remote Worldwide)</p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Phone</h3>
-                  <p><a href="tel:+251928169211" class="text-white">+251 928 169 211</a></p>
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope"></i>
+                  <div>
+                    <h3>Email</h3>
+                    <p>
+                      <a href="mailto:amanuyosi12@gmail.com">amanuyosi12@gmail.com</a>
+                      <button type="button" class="copy-email-btn" id="copyEmailBtn" data-email="amanuyosi12@gmail.com">Copy</button>
+                    </p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p><a href="mailto:amanuyosi12@gmail.com" class="text-white">amanuyosi12@gmail.com</a></p>
+                <div class="info-item d-flex">
+                  <i class="bi bi-telephone"></i>
+                  <div>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+251928169211">+251 928 169 211</a></p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                <i class="bi bi-file-earmark-pdf flex-shrink-0"></i>
-                <div>
-                  <h3>Official Resume</h3>
-                  <p><a href="Amanuel_Yosef_CV.pdf" target="_blank" class="text-info fw-bold">Download Amanuel_Yosef_CV.pdf</a></p>
+                <div class="info-item d-flex">
+                  <i class="bi bi-file-earmark-pdf"></i>
+                  <div>
+                    <h3>Curriculum Vitae</h3>
+                    <p><a href="Amanuel_Yosef_CV.pdf" target="_blank" rel="noopener noreferrer" class="fw-semibold">Download Amanuel_Yosef_CV.pdf</a></p>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.1775978675745!2d38.730520469554044!3d8.972321424137991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b86a934a48a95%3A0xaa496e7217bde464!2sGuinea%20Bissau%20St%2C%20Addis%20Ababa!5e1!3m2!1sen!2set!4v1744532876225!5m2!1sen!2set" width="100%" height="280" style="border:0; border-radius: 12px; margin-top: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d953.1775978675745!2d38.730520469554044!3d8.972321424137991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b86a934a48a95%3A0xaa496e7217bde464!2sGuinea%20Bissau%20St%2C%20Addis%20Ababa!5e1!3m2!1sen!2set!4v1744532876225!5m2!1sen!2set" title="Location Map — Addis Ababa, Ethiopia" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <div class="info-wrap h-100 d-flex flex-column justify-content-between" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-wrap d-flex flex-column justify-content-between">
               <div>
-                <h3 class="mb-3 text-white">Get in Touch</h3>
-                <p class="text-light mb-4">
-                  Whether you're looking for an experienced Senior Backend &amp; AI Engineer to scale your systems, design agentic LLM workflows, lead microservices transformation, or consult on distributed architecture, feel free to reach out directly via email, phone, or LinkedIn.
+                <h3 class="h5 fw-bold mb-2">Start a Conversation</h3>
+                <p class="small text-muted mb-4">
+                  Compose an inquiry below to open a pre-filled draft in your email client, or connect directly on LinkedIn or Telegram.
                 </p>
 
-                <div class="d-flex flex-column gap-3 mb-4">
-                  <a href="mailto:amanuyosi12@gmail.com" class="btn btn-hero-primary d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-envelope-fill me-2"></i> Send an Email (amanuyosi12@gmail.com)
-                  </a>
-                  <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" target="_blank" rel="noopener noreferrer" class="btn btn-hero-secondary d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-linkedin me-2"></i> Connect on LinkedIn
-                  </a>
-                  <a href="Amanuel_Yosef_CV.pdf" target="_blank" class="btn btn-hero-secondary d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-file-earmark-pdf me-2"></i> View / Download Complete CV
-                  </a>
-                </div>
+                <form id="mailtoComposerForm" class="row g-3">
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="e.g. Alex Morgan" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactTopic" class="form-label">Inquiry Type</label>
+                    <select class="form-control" id="contactTopic">
+                      <option value="Senior Backend / AI Engineering Role">Senior Backend / AI Engineering Role</option>
+                      <option value="Distributed Systems &amp; Architecture Consulting">Distributed Systems &amp; Architecture Consulting</option>
+                      <option value="LLM Orchestration &amp; Agentic AI Project">LLM Orchestration &amp; Agentic AI Project</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label">Project or Role Details</label>
+                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Share a brief overview of your team, architecture goals, or timeline..." required></textarea>
+                  </div>
+                  <div class="col-12 d-flex flex-wrap gap-2 pt-1">
+                    <button type="submit" class="btn-classic-primary">
+                      <i class="bi bi-send"></i> Open Email Draft
+                    </button>
+                    <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" target="_blank" rel="noopener noreferrer" class="btn-classic-outline-dark">
+                      <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://t.me/proaman777" target="_blank" rel="noopener noreferrer" class="btn-classic-outline-dark">
+                      <i class="bi bi-telegram"></i> Telegram
+                    </a>
+                  </div>
+                </form>
               </div>
 
-              <div class="p-3 rounded-3" style="background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2);">
-                <p class="mb-1 text-info small fw-bold"><i class="bi bi-lightning-charge-fill me-1"></i> Quick Availability Status</p>
-                <p class="mb-0 small text-light">Open for Senior Backend &amp; AI Engineer positions, distributed architecture consulting, and high-impact remote engineering roles.</p>
+              <div class="availability-banner mt-4">
+                <div class="small fw-bold text-dark mb-1"><i class="bi bi-check-circle-fill text-success me-1"></i> Availability Status</div>
+                <p class="mb-0 small text-muted">
+                  Currently open to full-time remote engineering roles, technical leadership engagements, and architecture consulting. Typical response time: within 24 hours.
+                </p>
               </div>
             </div>
           </div>
 
         </div>
-
       </div>
 
     </section><!-- /Contact Section -->
@@ -731,38 +952,28 @@
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Amanuel Yosef</strong> <span>All Rights Reserved</span></p>
+        <p>&copy; 2026 <strong class="px-1 sitename">Amanuel Yosef</strong> &middot; Senior Backend &amp; AI Engineer</p>
       </div>
       <div class="credits text-center">
-        Designed &amp; Built by <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer">Amanuel Yosef</a>
+        Addis Ababa, Ethiopia &middot; <a href="mailto:amanuyosi12@gmail.com">amanuyosi12@gmail.com</a> &middot; <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Vendor JS Files (deferred) -->
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/typed.js/typed.umd.js" defer></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 

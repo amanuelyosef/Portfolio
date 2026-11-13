@@ -1,68 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#051923"/>
-      <stop offset="50%" stop-color="#0c2340"/>
-      <stop offset="100%" stop-color="#043226"/>
-    </linearGradient>
-    <linearGradient id="payGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
-    </linearGradient>
-    <linearGradient id="streamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#10b981" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <pattern id="grid-ps" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e2e8f0" stroke-width="0.8"/>
+    </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <rect width="800" height="500" fill="#f8fafc"/>
+  <rect width="800" height="500" fill="url(#grid-ps)" opacity="0.65"/>
 
-  <!-- High-throughput data stream waves -->
-  <path d="M 0 160 Q 200 110, 400 160 T 800 160" fill="none" stroke="url(#payGrad)" stroke-width="2.5" opacity="0.6"/>
-  <path d="M 0 210 Q 250 260, 500 200 T 800 220" fill="none" stroke="url(#payGrad)" stroke-width="2" opacity="0.4"/>
-  <path d="M 0 120 Q 300 80, 600 140 T 800 110" fill="none" stroke="#06b6d4" stroke-width="1.5" opacity="0.3"/>
+  <rect x="48" y="38" width="196" height="28" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+  <text x="146" y="56" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#065f46" text-anchor="middle">DISTRIBUTED SYSTEMS</text>
 
-  <!-- Transaction packet nodes -->
-  <circle cx="180" cy="155" r="7" fill="#10b981" filter="url(#glow)"/>
-  <circle cx="360" cy="150" r="9" fill="#06b6d4" filter="url(#glow)"/>
-  <circle cx="560" cy="175" r="7" fill="#10b981" filter="url(#glow)"/>
-  <circle cx="700" cy="160" r="10" fill="#34d399" filter="url(#glow)"/>
+  <text x="752" y="56" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500" fill="#64748b" text-anchor="end">2022 – 2023 · GO / AWS ECS</text>
 
-  <!-- Distributed Routing Hub visualization -->
-  <g transform="translate(400, 150)">
-    <circle cx="0" cy="0" r="45" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5" stroke-dasharray="6,4"/>
-    <circle cx="0" cy="0" r="28" fill="#0c2340" stroke="#10b981" stroke-width="2" filter="url(#glow)"/>
-    <path d="M -10 -5 L 0 -15 L 10 -5 M 0 -15 L 0 15 M -10 5 L 0 15 L 10 5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Payment Routing Architecture -->
+  <g transform="translate(48, 96)">
+    <rect x="0" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="76" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Idempotent API</text>
+    <text x="76" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Go + FastAPI</text>
+    <text x="76" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#047857" text-anchor="middle">Redis Lock Keys</text>
+
+    <line x1="152" y1="78" x2="188" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="188,73 196,78 188,83" fill="#64748b"/>
+
+    <rect x="196" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="272" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Fraud Scoring</text>
+    <text x="272" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Rules + ML Risk</text>
+    <text x="272" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#047857" text-anchor="middle">-18% Chargebacks</text>
+
+    <line x1="348" y1="78" x2="384" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="384,73 392,78 384,83" fill="#64748b"/>
+
+    <rect x="392" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="468" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Smart Router</text>
+    <text x="468" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">5+ PSP Gateways</text>
+    <text x="468" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#047857" text-anchor="middle">Auto-Failover</text>
+
+    <line x1="544" y1="78" x2="580" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="580,73 588,78 580,83" fill="#64748b"/>
+
+    <rect x="588" y="36" width="116" height="84" rx="8" fill="#0f1c2e" stroke="#0f1c2e" stroke-width="1.2"/>
+    <text x="646" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Kafka + DLQ</text>
+    <text x="646" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Audit Ledger</text>
+    <text x="646" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#6ee7b7" text-anchor="middle">Exp. Backoff</text>
   </g>
 
-  <!-- Central Card -->
-  <rect x="100" y="320" width="600" height="230" rx="20" fill="#0f172a" fill-opacity="0.88" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" filter="url(#glow)"/>
+  <rect x="48" y="268" width="704" height="190" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="48" y="268" width="4" height="190" rx="2" fill="#047857"/>
 
-  <!-- Category Tag -->
-  <rect x="130" y="348" width="180" height="28" rx="14" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
-  <text x="220" y="367" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#10b981" text-anchor="middle">DISTRIBUTED SYSTEMS</text>
+  <text x="76" y="314" font-family="'Georgia', 'Times New Roman', serif" font-size="30" font-weight="700" fill="#0f172a">PayStream</text>
+  <text x="76" y="344" font-family="'Inter', system-ui, sans-serif" font-size="14.5" fill="#475569">High-Throughput Payment Orchestration, Failover Routing &amp; Fraud Prevention</text>
 
-  <!-- Title -->
-  <text x="130" y="415" font-family="'Outfit', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">PayStream</text>
+  <line x1="76" y1="368" x2="724" y2="368" stroke="#f1f5f9" stroke-width="1.5"/>
 
-  <!-- Subtitle -->
-  <text x="130" y="445" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#94a3b8">High-Throughput Payment Orchestrator &amp; Real-Time Fraud Detection</text>
+  <g transform="translate(76, 390)">
+    <text x="0" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#047857">99.99%</text>
+    <text x="0" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Gateway Uptime</text>
 
-  <!-- Metrics highlight bar -->
-  <g font-family="'Inter', sans-serif" font-size="13" font-weight="600">
-    <rect x="130" y="475" width="165" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="212" y="498" fill="#10b981" text-anchor="middle">⚡ 99.99% Uptime</text>
+    <text x="190" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">-18%</text>
+    <text x="190" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Chargeback Reduction</text>
 
-    <rect x="310" y="475" width="170" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="395" y="498" fill="#06b6d4" text-anchor="middle">🛡️ -18% Chargebacks</text>
+    <text x="395" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">5+ PSPs</text>
+    <text x="395" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Automatic Failover</text>
 
-    <rect x="495" y="475" width="175" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="582" y="498" fill="#a7f3d0" text-anchor="middle">🌐 5+ Gateways Routing</text>
+    <text x="565" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">Terraform</text>
+    <text x="565" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">AWS ECS IaC</text>
   </g>
 </svg>

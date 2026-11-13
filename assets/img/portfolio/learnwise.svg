@@ -1,85 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0f1d"/>
-      <stop offset="50%" stop-color="#0f172a"/>
-      <stop offset="100%" stop-color="#1e1b4b"/>
-    </linearGradient>
-    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#6366f1"/>
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="100%" stop-color="#ec4899"/>
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#e2e8f0" stroke-width="0.8"/>
+    </pattern>
   </defs>
 
-  <!-- Background -->
-  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <!-- Clean Classic Light Architectural Canvas -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+  <rect width="800" height="500" fill="url(#grid)" opacity="0.65"/>
 
-  <!-- Subtle Grid lines -->
-  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
-    <line x1="0" y1="100" x2="800" y2="100"/>
-    <line x1="0" y1="200" x2="800" y2="200"/>
-    <line x1="0" y1="300" x2="800" y2="300"/>
-    <line x1="0" y1="400" x2="800" y2="400"/>
-    <line x1="0" y1="500" x2="800" y2="500"/>
-    <line x1="160" y1="0" x2="160" y2="600"/>
-    <line x1="320" y1="0" x2="320" y2="600"/>
-    <line x1="480" y1="0" x2="480" y2="600"/>
-    <line x1="640" y1="0" x2="640" y2="600"/>
+  <!-- Top Category Strip -->
+  <rect x="48" y="38" width="210" height="28" rx="4" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="153" y="56" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#1e40af" text-anchor="middle">AI &amp; LLM ORCHESTRATION</text>
+
+  <text x="752" y="56" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="500" fill="#64748b" text-anchor="end">2023 – 2025 · AKS / KAFKA</text>
+
+  <!-- Architecture Diagram Flow -->
+  <g transform="translate(48, 96)">
+    <!-- Node 1: Client & Events -->
+    <rect x="0" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="76" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Learner Stream</text>
+    <text x="76" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">2M+ Active Users</text>
+    <text x="76" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#1d4ed8" text-anchor="middle">100k events/day</text>
+
+    <!-- Arrow 1 -->
+    <line x1="152" y1="78" x2="188" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="188,73 196,78 188,83" fill="#64748b"/>
+
+    <!-- Node 2: Kafka + Cassandra -->
+    <rect x="196" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="272" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Apache Kafka</text>
+    <text x="272" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Event Pipeline</text>
+    <text x="272" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#1d4ed8" text-anchor="middle">FastAPI + Cassandra</text>
+
+    <!-- Arrow 2 -->
+    <line x1="348" y1="78" x2="384" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="384,73 392,78 384,83" fill="#64748b"/>
+
+    <!-- Node 3: BERT + Collab Filtering -->
+    <rect x="392" y="36" width="152" height="84" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="468" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">BERT Recommender</text>
+    <text x="468" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Collaborative Filter</text>
+    <text x="468" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#1d4ed8" text-anchor="middle">PyTorch Inference</text>
+
+    <!-- Arrow 3 -->
+    <line x1="544" y1="78" x2="580" y2="78" stroke="#94a3b8" stroke-width="1.5"/>
+    <polygon points="580,73 588,78 580,83" fill="#64748b"/>
+
+    <!-- Node 4: GPT-4 + RAG -->
+    <rect x="588" y="36" width="116" height="84" rx="8" fill="#0f1c2e" stroke="#0f1c2e" stroke-width="1.2"/>
+    <text x="646" y="64" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">GPT-4 + RAG</text>
+    <text x="646" y="84" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">AI Tutor Agent</text>
+    <text x="646" y="102" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#93c5fd" text-anchor="middle">Azure AKS</text>
   </g>
 
-  <!-- Neural / Knowledge Graph Network -->
-  <g opacity="0.4" stroke="url(#primaryGrad)" stroke-width="2">
-    <line x1="220" y1="180" x2="340" y2="140"/>
-    <line x1="340" y1="140" x2="480" y2="170"/>
-    <line x1="480" y1="170" x2="580" y2="130"/>
-    <line x1="340" y1="140" x2="400" y2="250"/>
-    <line x1="400" y1="250" x2="480" y2="170"/>
-    <line x1="220" y1="180" x2="280" y2="280"/>
-    <line x1="280" y1="280" x2="400" y2="250"/>
-    <line x1="400" y1="250" x2="520" y2="270"/>
-    <line x1="480" y1="170" x2="520" y2="270"/>
-    <line x1="520" y1="270" x2="580" y2="130"/>
-  </g>
+  <!-- Summary Footer Card -->
+  <rect x="48" y="268" width="704" height="190" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+  <rect x="48" y="268" width="4" height="190" rx="2" fill="#1e40af"/>
 
-  <!-- Glowing Nodes -->
-  <circle cx="220" cy="180" r="7" fill="#38bdf8" filter="url(#glow)"/>
-  <circle cx="340" cy="140" r="10" fill="#6366f1" filter="url(#glow)"/>
-  <circle cx="480" cy="170" r="9" fill="#a855f7" filter="url(#glow)"/>
-  <circle cx="580" cy="130" r="6" fill="#38bdf8" filter="url(#glow)"/>
-  <circle cx="280" cy="280" r="8" fill="#ec4899" filter="url(#glow)"/>
-  <circle cx="400" cy="250" r="14" fill="#38bdf8" filter="url(#glow)"/>
-  <circle cx="520" cy="270" r="8" fill="#6366f1" filter="url(#glow)"/>
+  <text x="76" y="314" font-family="'Georgia', 'Times New Roman', serif" font-size="30" font-weight="700" fill="#0f172a">LearnWise</text>
+  <text x="76" y="344" font-family="'Inter', system-ui, sans-serif" font-size="14.5" fill="#475569">Adaptive Learning Platform — Personalized Curriculum Graph &amp; Agentic RAG Tutor</text>
 
-  <!-- Central Visual Container Card -->
-  <rect x="100" y="320" width="600" height="230" rx="20" fill="#0f172a" fill-opacity="0.85" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5" filter="url(#glow)"/>
+  <line x1="76" y1="368" x2="724" y2="368" stroke="#f1f5f9" stroke-width="1.5"/>
 
-  <!-- Category Tag -->
-  <rect x="130" y="348" width="170" height="28" rx="14" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1"/>
-  <text x="215" y="367" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">AI &amp; LLM ORCHESTRATION</text>
+  <!-- Metrics Strip -->
+  <g transform="translate(76, 390)">
+    <text x="0" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#1e40af">2M+</text>
+    <text x="0" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Learners Served</text>
 
-  <!-- Title -->
-  <text x="130" y="415" font-family="'Outfit', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">LearnWise</text>
+    <text x="190" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">100k/day</text>
+    <text x="190" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Kafka Event Stream</text>
 
-  <!-- Subtitle -->
-  <text x="130" y="445" font-family="'Inter', sans-serif" font-size="15" font-weight="400" fill="#94a3b8">Adaptive Learning Platform with GPT-4, RAG &amp; Kafka Event Streams</text>
+    <text x="395" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">99.9%</text>
+    <text x="395" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">AKS API Availability</text>
 
-  <!-- Metrics highlight bar -->
-  <g font-family="'Inter', sans-serif" font-size="13" font-weight="600">
-    <rect x="130" y="475" width="140" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="200" y="498" fill="#38bdf8" text-anchor="middle">⚡ 2M+ Users</text>
-
-    <rect x="285" y="475" width="165" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="367" y="498" fill="#a855f7" text-anchor="middle">📊 100k events/day</text>
-
-    <rect x="465" y="475" width="205" height="36" rx="8" fill="rgba(30, 41, 59, 0.9)" stroke="rgba(148, 163, 184, 0.2)"/>
-    <text x="567" y="498" fill="#34d399" text-anchor="middle">🤖 GPT-4 + RAG Tutoring</text>
+    <text x="570" y="16" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#0f172a">5 Eng</text>
+    <text x="570" y="36" font-family="'Inter', system-ui, sans-serif" font-size="12" fill="#64748b">Team Led</text>
   </g>
 </svg>

@@ -4,25 +4,26 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>LearnWise Case Study — Amanuel Yosef</title>
-  <meta content="Detailed architectural case study of LearnWise: an adaptive learning platform with GPT-4, LangChain, Kafka streams, BERT recommendations, and Azure Kubernetes." name="description">
-  <meta content="LearnWise, Amanuel Yosef, Case Study, LLM Orchestration, GPT-4, LangChain, FastAPI, Kafka, Distributed Systems, PyTorch" name="keywords">
+  <title>Project Case Study — Amanuel Yosef</title>
+  <meta content="Architecture and engineering case studies by Amanuel Yosef, Senior Backend &amp; AI Engineer." name="description">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
+  <!-- Fonts (non-render-blocking) -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet"></noscript>
+
+  <!-- Preload critical icon font & portrait -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6">
+  <link rel="preload" as="image" type="image/webp" href="assets/img/my-profile-img.webp">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -31,48 +32,58 @@
 <body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <i class="header-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="Amanuel Yosef" class="img-fluid rounded-circle">
+      <picture>
+        <source srcset="assets/img/my-profile-img.webp" type="image/webp">
+        <img src="assets/img/my-profile-img.jpg" alt="Portrait of Amanuel Yosef" class="img-fluid rounded-circle" width="112" height="112" decoding="async" fetchpriority="high">
+      </picture>
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <h1 class="sitename">Amanuel Yosef</h1>
     </a>
+    <p class="sidebar-role">Senior Backend &amp; AI Engineer</p>
 
     <div class="social-links text-center">
-      <a href="https://github.com/amanuelyosef" class="github" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" class="linkedin" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:amanuyosi12@gmail.com" class="envelope" title="Email"><i class="bi bi-envelope"></i></a>
-      <a href="https://t.me/proaman777" class="telegram" title="Telegram" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
-      <a href="https://x.com/AmanuYosi" class="twitter" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://github.com/amanuelyosef" class="github" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/amanuel-yosef-ab2685333/" class="linkedin" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:amanuyosi12@gmail.com" class="envelope" title="Email" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      <a href="https://t.me/proaman777" class="telegram" title="Telegram" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><i class="bi bi-telegram"></i></a>
+      <a href="https://x.com/AmanuYosi" class="twitter" title="X (Twitter)" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
     </div>
 
-    <nav id="navmenu" class="navmenu">
+    <nav id="navmenu" class="navmenu" aria-label="Primary Navigation">
       <ul>
         <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="index.html#skills"><i class="bi bi-cpu navicon"></i> Skills</a></li>
-        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-grid navicon"></i> Portfolio</a></li>
-        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-cpu navicon"></i>Capabilities</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i>Experience</a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-grid navicon"></i>Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
       </ul>
     </nav>
 
+    <div class="sidebar-footer">
+      <span class="availability-dot" aria-hidden="true"></span>Available for Remote &amp; Full-Time Roles
+    </div>
   </header>
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background">
+    <div class="page-title">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">LearnWise — Architecture &amp; Engineering Case Study</h1>
-        <nav class="breadcrumbs">
+        <div>
+          <span class="section-kicker mb-1" id="case-category">Architecture Case Study</span>
+          <h1 class="mb-2 mb-lg-0" id="case-page-title">LearnWise — Adaptive Learning Platform</h1>
+        </div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#portfolio">Portfolio</a></li>
-            <li class="current">LearnWise</li>
+            <li><a href="index.html#portfolio">Projects</a></li>
+            <li class="current" id="case-breadcrumb">LearnWise</li>
           </ol>
         </nav>
       </div>
@@ -80,76 +91,47 @@
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/learnwise.svg" alt="LearnWise System Architecture" class="img-fluid rounded-4 shadow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/paystream.svg" alt="PayStream Orchestration" class="img-fluid rounded-4 shadow">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/studybuddy.svg" alt="Study Buddy Platform" class="img-fluid rounded-4 shadow">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+            <div class="portfolio-details-frame mb-4">
+              <img id="case-image" src="assets/img/portfolio/learnwise.svg" alt="LearnWise Architecture Diagram" class="img-fluid" width="800" height="500" decoding="async" fetchpriority="high">
             </div>
 
-            <div class="portfolio-description mt-5" data-aos="fade-up" data-aos-delay="200">
-              <h2>Adaptive Learning Platform with LLM &amp; Event-Driven Architecture</h2>
-              <p>
-                LearnWise is an enterprise-scale educational platform built to personalize curriculum paths for over 2 million learners. As Lead Architect and AI Engineer, I directed the technical design and led an engineering team of 5 to deliver a resilient, high-throughput backend paired with state-of-the-art agentic AI capabilities.
+            <div class="portfolio-description pt-2">
+              <h2 id="case-headline">Adaptive Learning Platform with LLM &amp; Event-Driven Architecture</h2>
+              <p id="case-overview" class="mb-4">
+                LearnWise is an enterprise-scale educational platform built to personalize curriculum paths for over 2 million learners. As Lead Architect and AI Engineer, I directed the technical design and led an engineering team of 5 to deliver a resilient, high-throughput backend paired with production-grade agentic AI capabilities.
               </p>
-              
-              <h4 class="mt-4 text-white">System Architecture &amp; Key Innovations</h4>
-              <ul>
-                <li class="mb-2"><strong>Dual-Model Recommendation Engine:</strong> Combined collaborative filtering algorithms with contextual BERT embeddings to generate personalized student learning graphs tailored to skill mastery and velocity.</li>
-                <li class="mb-2"><strong>High-Throughput Event Streaming:</strong> Architected real-time student interaction pipelines consuming and processing over 100,000 events/day using Apache Kafka streams and Cassandra storage.</li>
-                <li class="mb-2"><strong>Agentic AI Tutoring Assistant:</strong> Integrated GPT-4 with Retrieval-Augmented Generation (RAG) deployed on Azure Kubernetes Service (AKS). The assistant executes multi-step reasoning, accesses curriculum reference tools, and handles ambiguous user inquiries.</li>
-                <li class="mb-2"><strong>Engineering Leadership:</strong> Conducted code reviews, set API contracts, instituted automated testing pipelines, and led architecture design sessions.</li>
+
+              <h4 class="mb-3">System Architecture &amp; Engineering Highlights</h4>
+              <ul id="case-highlights" class="mb-4">
+                <li class="mb-2"><strong>Dual-Model Recommendation Engine:</strong> Combined collaborative filtering with contextual BERT embeddings to generate personalized learning paths tailored to student mastery and velocity.</li>
+                <li class="mb-2"><strong>High-Throughput Event Streaming:</strong> Architected real-time progress pipelines consuming and processing over 100,000 events/day using Apache Kafka streams and Cassandra storage.</li>
+                <li class="mb-2"><strong>Agentic AI Tutoring Assistant:</strong> Integrated GPT-4 with Retrieval-Augmented Generation (RAG) deployed on Azure Kubernetes Service (AKS) for multi-step reasoning and curriculum tool calls.</li>
+                <li class="mb-2"><strong>Engineering Leadership:</strong> Led a team of 5 engineers through architecture design sessions, strict API contracts, and code review standards.</li>
               </ul>
 
-              <h4 class="mt-4 text-white">Measurable Results</h4>
-              <div class="row g-3 mt-1">
+              <h4 class="mb-3">Key Outcomes &amp; Metrics</h4>
+              <div class="row g-3" id="case-metrics">
                 <div class="col-md-4">
-                  <div class="p-3 rounded-3" style="background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.25);">
-                    <h3 class="h4 text-info mb-1">2M+</h3>
+                  <div class="metric-box">
+                    <h3>2M+</h3>
                     <p class="small text-muted mb-0">Active learners served</p>
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="p-3 rounded-3" style="background: rgba(168, 85, 247, 0.1); border: 1px solid rgba(168, 85, 247, 0.25);">
-                    <h3 class="h4 text-purple mb-1" style="color: #c084fc;">100k/day</h3>
+                  <div class="metric-box">
+                    <h3>100k/day</h3>
                     <p class="small text-muted mb-0">Kafka event throughput</p>
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="p-3 rounded-3" style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.25);">
-                    <h3 class="h4 text-success mb-1">99.9%</h3>
-                    <p class="small text-muted mb-0">Tutoring API availability</p>
+                  <div class="metric-box">
+                    <h3>5 Engineers</h3>
+                    <p class="small text-muted mb-0">Cross-functional team led</p>
                   </div>
                 </div>
               </div>
@@ -157,19 +139,18 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="portfolio-info mb-4">
               <h3>Project Specifications</h3>
-              <ul>
-                <li><strong>Role</strong>: Lead Architect &amp; Senior AI Engineer</li>
-                <li><strong>Timeline</strong>: 06/2023 – 06/2025</li>
-                <li><strong>Domain</strong>: Distributed Backend &amp; Agentic LLM</li>
-                <li><strong>Scale</strong>: 2M+ Users, 100k events/day</li>
-                <li><strong>Team Size</strong>: 5 Engineers</li>
-                <li><strong>Cloud</strong>: Azure Kubernetes Service (AKS)</li>
+              <ul id="case-specs">
+                <li><strong>Role</strong><span>Lead Architect &amp; AI Engineer</span></li>
+                <li><strong>Timeline</strong><span>06/2023 – 06/2025</span></li>
+                <li><strong>Domain</strong><span>Distributed Backend &amp; LLM</span></li>
+                <li><strong>Scale</strong><span>2M+ Users, 100k events/day</span></li>
+                <li><strong>Infrastructure</strong><span>Azure Kubernetes (AKS)</span></li>
               </ul>
-              
-              <h4 class="h6 mt-4 text-white">Tech Stack</h4>
-              <div class="tech-badges">
+
+              <h4 class="h6 fw-bold mt-4 mb-2">Technology Stack</h4>
+              <div class="tech-badges" id="case-tags">
                 <span class="tech-badge">FastAPI</span>
                 <span class="tech-badge">Cassandra</span>
                 <span class="tech-badge">Apache Kafka</span>
@@ -177,13 +158,32 @@
                 <span class="tech-badge">LangChain</span>
                 <span class="tech-badge">GPT-4</span>
                 <span class="tech-badge">BERT</span>
-                <span class="tech-badge">RAG</span>
-                <span class="tech-badge">Kubernetes</span>
+                <span class="tech-badge">AKS</span>
               </div>
 
-              <div class="mt-4">
-                <a href="index.html#portfolio" class="btn btn-hero-secondary w-100 text-center"><i class="bi bi-arrow-left me-1"></i> Back to Portfolio</a>
-                <a href="Amanuel_Yosef_CV.pdf" target="_blank" class="btn btn-hero-primary w-100 text-center mt-2"><i class="bi bi-file-earmark-pdf me-1"></i> Download CV (PDF)</a>
+              <div class="d-grid gap-2 mt-4">
+                <a id="case-repo-link" href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer" class="btn-classic-primary">
+                  <i class="bi bi-github"></i> View GitHub Profile
+                </a>
+                <a href="index.html#portfolio" class="btn-classic-outline-dark">
+                  <i class="bi bi-arrow-left"></i> Back to All Projects
+                </a>
+                <a href="Amanuel_Yosef_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-classic-outline-dark">
+                  <i class="bi bi-file-earmark-pdf"></i> Download Full CV (PDF)
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio-info">
+              <h3 class="h6 fw-bold border-0 pb-1 mb-2">Browse Other Projects</h3>
+              <div class="d-flex flex-column gap-2 small">
+                <a href="portfolio-details.html?project=learnwise">LearnWise — Adaptive Learning &amp; LLM</a>
+                <a href="portfolio-details.html?project=paystream">PayStream — Payment Orchestration</a>
+                <a href="portfolio-details.html?project=studybuddy">Study Buddy — Real-Time Platform</a>
+                <a href="portfolio-details.html?project=nisr-market">Nisr Market — P2P Commerce</a>
+                <a href="portfolio-details.html?project=child-tracker">Children Tracker — GPS Safety</a>
+                <a href="portfolio-details.html?project=food-recognizer">AI Food Ingredient Recognizer</a>
+                <a href="portfolio-details.html?project=grain-storage">Automated Grain Storage (IoT)</a>
               </div>
             </div>
           </div>
@@ -191,35 +191,271 @@
         </div>
 
       </div>
-
     </section><!-- /Portfolio Details Section -->
 
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Amanuel Yosef</strong> <span>All Rights Reserved</span></p>
+        <p>&copy; 2026 <strong class="px-1 sitename">Amanuel Yosef</strong> &middot; Senior Backend &amp; AI Engineer</p>
       </div>
       <div class="credits text-center">
-        Designed &amp; Built by <a href="https://github.com/amanuelyosef" target="_blank" rel="noopener noreferrer">Amanuel Yosef</a>
+        Addis Ababa, Ethiopia &middot; <a href="mailto:amanuyosi12@gmail.com">amanuyosi12@gmail.com</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Project Case Study Data & Hydration -->
+  <script>
+    (function() {
+      const PROJECTS = {
+        "learnwise": {
+          category: "AI & Distributed Systems",
+          breadcrumb: "LearnWise",
+          pageTitle: "LearnWise — Adaptive Learning Platform",
+          image: "assets/img/portfolio/learnwise.svg",
+          headline: "Adaptive Learning Platform with LLM & Event-Driven Architecture",
+          overview: "LearnWise is an enterprise-scale educational platform built to personalize curriculum paths for over 2 million learners. As Lead Architect and AI Engineer, I directed the technical design and led an engineering team of 5 to deliver a resilient, high-throughput backend paired with production-grade agentic AI capabilities.",
+          highlights: [
+            "<strong>Dual-Model Recommendation Engine:</strong> Combined collaborative filtering algorithms with contextual BERT embeddings to generate personalized learning graphs tailored to student mastery and pace.",
+            "<strong>High-Throughput Event Streaming:</strong> Architected real-time student progress pipelines consuming 100,000+ events/day via Apache Kafka streams and Cassandra storage.",
+            "<strong>Agentic AI Tutoring Assistant:</strong> Integrated GPT-4 with Retrieval-Augmented Generation (RAG) deployed on Azure Kubernetes Service (AKS), supporting multi-step reasoning, tool calls, and ambiguous user inquiries.",
+            "<strong>Engineering Leadership:</strong> Led a 5-engineer team through architecture design sessions, API contract reviews, and automated testing standards."
+          ],
+          metrics: [
+            { value: "2M+", label: "Learners served" },
+            { value: "100k/day", label: "Kafka event throughput" },
+            { value: "5 Engineers", label: "Team led & mentored" }
+          ],
+          specs: [
+            ["Role", "Lead Architect & AI Engineer"],
+            ["Timeline", "06/2023 – 06/2025"],
+            ["Domain", "Distributed Backend & Agentic LLM"],
+            ["Scale", "2M+ Users, 100k events/day"],
+            ["Cloud", "Azure Kubernetes (AKS)"]
+          ],
+          tags: ["FastAPI", "Cassandra", "Apache Kafka", "PyTorch", "LangChain", "GPT-4", "BERT", "RAG", "AKS"],
+          repoUrl: "https://github.com/amanuelyosef",
+          repoLabel: "View GitHub Profile"
+        },
+        "paystream": {
+          category: "Fintech & Distributed Infrastructure",
+          breadcrumb: "PayStream",
+          pageTitle: "PayStream — High-Throughput Payment Orchestration",
+          image: "assets/img/portfolio/paystream.svg",
+          headline: "Fault-Tolerant Payment Router & Real-Time Fraud Detection",
+          overview: "PayStream is a high-availability payment orchestration layer engineered to route financial transactions reliably across multiple payment service providers while scoring risk in real time. Built with Go, Python/FastAPI, and Kafka on AWS ECS.",
+          highlights: [
+            "<strong>Multi-Gateway Failover Routing:</strong> Built dynamic routing across 5+ payment gateways with automated circuit breaking and failover, sustaining 99.99% uptime.",
+            "<strong>Transaction Reliability:</strong> Implemented strict idempotency keys, exponential backoff retry policies, and dead-letter queues (DLQs) to prevent duplicate charges and data loss.",
+            "<strong>Real-Time Fraud Detection:</strong> Combined deterministic rule engines with ML risk scoring over transaction streams, reducing chargebacks by 18%.",
+            "<strong>Auditability & IaC:</strong> Designed traceable multi-step transaction workflows with complete audit logs and reproducible Terraform infrastructure on AWS ECS."
+          ],
+          metrics: [
+            { value: "99.99%", label: "Payment routing uptime" },
+            { value: "-18%", label: "Chargeback reduction" },
+            { value: "5+ PSPs", label: "Integrated gateways" }
+          ],
+          specs: [
+            ["Role", "Backend Engineer"],
+            ["Timeline", "01/2022 – 02/2023"],
+            ["Domain", "Fintech & Payment Systems"],
+            ["Infrastructure", "AWS ECS & Terraform"],
+            ["Reliability", "Idempotency & DLQs"]
+          ],
+          tags: ["Go", "Python", "FastAPI", "Kafka", "Redis", "AWS ECS", "Terraform"],
+          repoUrl: "https://github.com/amanuelyosef",
+          repoLabel: "View GitHub Profile"
+        },
+        "studybuddy": {
+          category: "Real-Time Full-Stack Platform",
+          breadcrumb: "Study Buddy",
+          pageTitle: "Study Buddy — Real-Time Collaborative Platform",
+          image: "assets/img/portfolio/studybuddy.svg",
+          headline: "WebSocket Study Rooms, Video Collaboration & Payment Workflows",
+          overview: "Study Buddy is a real-time collaborative learning platform designed to keep remote students engaged through synchronized Pomodoro study rooms, live chat, video meetings, and streak analytics.",
+          highlights: [
+            "<strong>Real-Time Collaboration:</strong> Built WebSocket-backed study rooms, synchronized Pomodoro timers, embedded Jitsi video conferencing, and habit streak analytics.",
+            "<strong>Auth, Payments & Protection:</strong> Integrated Chapa payment processing, JWT authentication with Google OAuth, API rate throttling, and Redis caching.",
+            "<strong>Containerized Delivery:</strong> Packaged the full 5-service stack (PostgreSQL, Redis, Celery, Django, Nginx) using Docker Compose.",
+            "<strong>Technical Mentorship:</strong> Directed architectural decisions and mentored a junior developer on backend best practices."
+          ],
+          metrics: [
+            { value: "WebSockets", label: "Real-time room sync" },
+            { value: "5 Services", label: "Docker Compose stack" },
+            { value: "Chapa + OAuth", label: "Payments & auth workflows" }
+          ],
+          specs: [
+            ["Role", "Full-Stack Lead"],
+            ["Timeline", "09/2020 – 08/2021"],
+            ["Domain", "EdTech & Real-Time Web"],
+            ["Stack", "Django, React, Celery"],
+            ["Deployment", "Docker Compose & Nginx"]
+          ],
+          tags: ["Django", "React", "WebSockets", "Redis", "PostgreSQL", "Celery", "Docker", "Chapa"],
+          repoUrl: "https://github.com/amanuelyosef",
+          repoLabel: "View GitHub Profile"
+        },
+        "nisr-market": {
+          category: "Multi-Platform Commerce",
+          breadcrumb: "Nisr Market",
+          pageTitle: "Nisr Market — Ethiopian P2P Commerce Ecosystem",
+          image: "assets/img/nisr_market_app_logo.webp",
+          headline: "Cross-Platform Marketplace with Instant Search & Moderation",
+          overview: "Nisr Market is a multi-platform peer-to-peer commerce ecosystem tailored for Ethiopian buyers and sellers, uniting a native Android application, a responsive React discovery web portal, and an administrative moderation console.",
+          highlights: [
+            "<strong>Unified Multi-Platform Experience:</strong> Delivered synchronized product listings and user workflows across native Android and web clients.",
+            "<strong>Fast Discovery Infrastructure:</strong> Integrated Algolia search indexing for low-latency filtering across categories, pricing, and locations.",
+            "<strong>Operations & Moderation:</strong> Built a dedicated admin panel backed by Firebase to review listings and maintain marketplace trust."
+          ],
+          metrics: [
+            { value: "Android + Web", label: "Cross-platform clients" },
+            { value: "Algolia", label: "Instant search engine" },
+            { value: "Firebase", label: "Real-time backend & auth" }
+          ],
+          specs: [
+            ["Role", "Lead Developer & Architect"],
+            ["Domain", "P2P E-Commerce"],
+            ["Clients", "Android & React Web"],
+            ["Backend", "Firebase & Algolia"]
+          ],
+          tags: ["Android", "React", "Firebase", "Algolia"],
+          repoUrl: "https://github.com/amanuelyosef/nisr-market",
+          repoLabel: "View Repository"
+        },
+        "child-tracker": {
+          category: "Mobile & Geolocation Systems",
+          breadcrumb: "Children Tracker",
+          pageTitle: "Children Tracker — Real-Time GPS Family Safety",
+          image: "assets/img/child_tracker_app_logo.webp",
+          headline: "Consent-First Family Location Tracking & Geofencing Alerts",
+          overview: "Children Tracker is an Android family safety application focused on reliable real-time location visibility, configurable geofence boundaries, and clear consent-first privacy controls.",
+          highlights: [
+            "<strong>Geofencing & Live Telemetry:</strong> Implemented background GPS location services with boundary alerts when entering or leaving designated safe zones.",
+            "<strong>Consent-First Architecture:</strong> Designed transparent pairing and role-specific parent and child interfaces respecting user privacy.",
+            "<strong>Real-Time Synchronization:</strong> Leveraged Firebase for low-latency coordinate updates and alert delivery."
+          ],
+          metrics: [
+            { value: "Real-Time GPS", label: "Background tracking" },
+            { value: "Geofencing", label: "Automated zone alerts" },
+            { value: "Dual UX", label: "Parent & child roles" }
+          ],
+          specs: [
+            ["Role", "Lead Developer"],
+            ["Platform", "Android"],
+            ["Domain", "Geolocation & Family Safety"],
+            ["Services", "GPS, Geofencing, Firebase"]
+          ],
+          tags: ["Android", "GPS", "Geofencing", "Background Services", "Firebase"],
+          repoUrl: "https://github.com/amanuelyosef/child-tracker",
+          repoLabel: "View Repository"
+        },
+        "food-recognizer": {
+          category: "Applied Computer Vision",
+          breadcrumb: "AI Food Recognizer",
+          pageTitle: "AI Food Ingredient Recognizer",
+          image: "assets/img/food_recognizer_logo.webp",
+          headline: "Multimodal Meal Analysis & Ingredient Classification on Mobile",
+          overview: "AI Food Ingredient Recognizer pairs mobile camera capture with multimodal AI inference APIs to identify dishes and extract structured ingredient breakdowns in real time.",
+          highlights: [
+            "<strong>Camera-to-Inference Pipeline:</strong> Integrated native Android camera capture with optimized image payload transmission to multimodal AI REST endpoints.",
+            "<strong>Structured Ingredient Output:</strong> Parsed vision model responses into clean, user-friendly ingredient lists and meal classifications.",
+            "<strong>Responsive Mobile UX:</strong> Designed streamlined capture, loading, and classification review flows for everyday usability."
+          ],
+          metrics: [
+            { value: "Multimodal AI", label: "Vision-language inference" },
+            { value: "Real-Time", label: "On-demand meal scan" },
+            { value: "REST API", label: "Modular inference client" }
+          ],
+          specs: [
+            ["Role", "AI & Mobile Engineer"],
+            ["Platform", "Android"],
+            ["Domain", "Computer Vision & Multimodal AI"],
+            ["Integration", "Camera API & REST Services"]
+          ],
+          tags: ["Computer Vision", "Multimodal AI", "Android", "REST APIs"],
+          repoUrl: "https://github.com/amanuelyosef/AI-Powered-Food-Ingredient-Recognizer",
+          repoLabel: "View Repository"
+        },
+        "grain-storage": {
+          category: "IoT & Embedded Systems",
+          breadcrumb: "Grain Storage IoT",
+          pageTitle: "Automated Grain Storage System",
+          image: "assets/img/store_control_app_logo.webp",
+          headline: "Sensor-Driven Post-Harvest Preservation & Climate Automation",
+          overview: "An IoT environmental monitoring and automated control system built around ESP8266 microcontrollers and environmental sensors to protect stored grain from moisture and temperature spoilage.",
+          highlights: [
+            "<strong>Continuous Telemetry:</strong> Monitored storage temperature and humidity conditions continuously via embedded sensor nodes.",
+            "<strong>Automated Actuation:</strong> Triggered ventilation and climate controls automatically when readings crossed safe preservation thresholds.",
+            "<strong>Food Security Impact:</strong> Engineered to reduce post-harvest grain losses through low-cost, reliable embedded automation."
+          ],
+          metrics: [
+            { value: "ESP8266", label: "Microcontroller node" },
+            { value: "24/7", label: "Automated monitoring" },
+            { value: "AgriTech", label: "Post-harvest preservation" }
+          ],
+          specs: [
+            ["Role", "Lead IoT & Systems Engineer"],
+            ["Hardware", "ESP8266 & Environmental Sensors"],
+            ["Domain", "AgriTech & Embedded Automation"],
+            ["Objective", "Post-harvest spoilage reduction"]
+          ],
+          tags: ["IoT", "ESP8266", "Sensors", "Embedded Automation"],
+          repoUrl: "https://github.com/amanuelyosef",
+          repoLabel: "View GitHub Profile"
+        }
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("project") || "learnwise";
+      const data = PROJECTS[slug] || PROJECTS["learnwise"];
+
+      document.title = `${data.pageTitle} — Amanuel Yosef`;
+      document.getElementById("case-category").textContent = data.category;
+      document.getElementById("case-page-title").textContent = data.pageTitle;
+      document.getElementById("case-breadcrumb").textContent = data.breadcrumb;
+
+      const imgEl = document.getElementById("case-image");
+      imgEl.src = data.image;
+      imgEl.alt = data.pageTitle;
+
+      document.getElementById("case-headline").textContent = data.headline;
+      document.getElementById("case-overview").textContent = data.overview;
+
+      document.getElementById("case-highlights").innerHTML = data.highlights
+        .map(item => `<li class="mb-2">${item}</li>`)
+        .join("");
+
+      document.getElementById("case-metrics").innerHTML = data.metrics
+        .map(m => `
+          <div class="col-md-4">
+            <div class="metric-box">
+              <h3>${m.value}</h3>
+              <p class="small text-muted mb-0">${m.label}</p>
+            </div>
+          </div>
+        `).join("");
+
+      document.getElementById("case-specs").innerHTML = data.specs
+        .map(([k, v]) => `<li><strong>${k}</strong><span>${v}</span></li>`)
+        .join("");
+
+      document.getElementById("case-tags").innerHTML = data.tags
+        .map(t => `<span class="tech-badge">${t}</span>`)
+        .join("");
+
+      const repoLink = document.getElementById("case-repo-link");
+      repoLink.href = data.repoUrl;
+      repoLink.innerHTML = `<i class="bi bi-github"></i> ${data.repoLabel}`;
+    })();
+  </script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </body>
 
